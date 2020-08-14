@@ -13,17 +13,16 @@ This hack will help you learn:
 1. Monitoring apps with Application Insights
 
 ## Challenges
- - [Challenge 0](./Student/challenge00.md) - Setup
- - [Challenge 1](./Student/challenge01.md) - GitHub: Introduction
- - [Challenge 2](./Student/challenge02.md) - GitHub Projects: Track your work
- - [Challenge 3](./Student/challenge03.md) - GitHub Repos: Introduction
- - [Challenge 4](./Student/challenge04.md) - Azure Pipelines: Infrastructure as Code
- - [Challenge 5](./Student/challenge05.md) - Azure Pipelines: Continuous Integration
- - [Challenge 6](./Student/challenge06.md) - Azure Pipelines: Continuous Delivery
- - [Challenge 7](./Student/challenge07.md) - Azure Repos: Branching & Policies
- - [Challenge 8](./Student/challenge08.md) - Azure Monitoring: Application Insights 
- - [Challenge 9](./Student/challenge09.md) - Azure Pipelines: OSS Scanning with WhiteSource Bolt
- - [Challenge 10](./Student/challenge09.md) - GitHub Packages
+ - [Challenge 0](./Student/challenge00.md) - Setup and Introduction
+ - [Challenge 1](./Student/challenge01.md) - GitHub Projects: Track your work
+ - [Challenge 2](./Student/challenge02.md) - GitHub Repos: Introduction
+ - [Challenge 3](./Student/challenge03.md) - Azure Pipelines: Infrastructure as Code
+ - [Challenge 4](./Student/challenge04.md) - Azure Pipelines: Continuous Integration
+ - [Challenge 5](./Student/challenge05.md) - Azure Pipelines: Continuous Delivery
+ - [Challenge 6](./Student/challenge06.md) - Azure Repos: Branching & Policies
+ - [Challenge 7](./Student/challenge07.md) - Azure Monitoring: Application Insights 
+ - [Challenge 8](./Student/challenge08.md) - Azure Pipelines: OSS Scanning with WhiteSource Bolt
+ - [Challenge 9](./Student/challenge09.md) - GitHub Packages
 
 ## Ideas
 Kevin does odds. Will does even.
