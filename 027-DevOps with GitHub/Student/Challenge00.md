@@ -2,58 +2,37 @@
 
 # Challenge 0 - Setup
 
-**[Home](../readme.md)** - [Next Challenge>](./Challenge-X+1.md)
+**[Home](../readme.md)** - [Next Challenge>](./Challenge01.md)
 
-## Pre-requisites (Optional)
+## Introduction
 
-*Include any technical pre-requisites needed for this challenge.  Typically, it is completion of one or more of the previous challenges if there is a dependency.*
-
-**- Lorem ipsum dolor sit amet, consectetur adipiscing elit.**
-
-**- Fusce commodo nulla elit, vitae scelerisque lorem maximus eu.** 
-
-**- Nulla vitae ante turpis. Etiam tincidunt venenatis mauris, ac volutpat augue rutrum sed. Vivamus dignissim est sed dolor luctus aliquet. Vestibulum cursus turpis nec finibus commodo.**
-
-**- Vivamus venenatis accumsan neque non lacinia. Sed maximus sodales varius. Proin eu nulla nunc. Proin scelerisque ipsum in massa tincidunt venenatis. Nulla eget interdum nunc, in vehicula risus.**
-
-
-## Introduction (Optional)
-
-DevOps is a very broad topic, and you have lots of choices when it comes to the tools that you use. In this challenge, you will set up your computer and cloud environment with the minimum required tools. 
+DevOps is a broad concept that encompasses people, processes, and tools. The tools you use fall into a number of categories, including version control, Continuous Integration and Continuous Deployment (CI/CD), Infrastructure-as-Code, and security scanning. Within each category, you have many choices when it comes to implementation. In this challenge, you will set up your local machine and cloud environment with the minimum requirements, but the lessons that follow will translate to any DevOps practice, regardless of tooling. 
 
 ## Description
 
-1. Create a GitHub account that you can use for this hack. You may use an existing account if you have one already.
-1. Create an Azure subscription that you can use for this hack. If you already have a subscription, you may use it. Alternatively, you can get a free trial subscription [here]().
-1. Log in to the Azure Portal to confirm that you have an active subscription that you can deploy cloud services to. 
-1. 
+Begin by creating a GitHub account that you can use for this hack. You may use an existing account if you have one already.
+
+Next, create an Azure subscription that you can use for this hack. If you already have a subscription, you may use it. Alternatively, you can get a free trial subscription [here]().
+
+Log in to the Azure Portal to confirm that you have an active subscription that you can deploy cloud services to. 
+
+Additionally, you will need to install a Git client. Two of the most popular ways of working with GitHub are the Git command line tool and GitHub Desktop (you only need one):
+- If you are comfortable with command line interfaces and want to try Git SCM, follow instructions to download and install [here](https://git-scm.com/downloads). 
+- If you prefer a GUI-based experience, download and install GitHub Desktop [here](https://desktop.github.com/). 
+
+Finally, you will need some version of IDE or text editor to complete the challenges. You are welcome to use built in applications such as TextEdit or Notepad, though we highly recommend development tools such as [Visual Studio Code](https://code.visualstudio.com/) or [Atom](https://atom.io/). Follow the links to download and install, or use an editor of your choice!
 
 
 ## Success Criteria
 
-*Success criteria goes here. This is a list of things an coach can verfiy to prove the attendee has successfully completed the challenge.*
+You should now be able to login to both GitHub and Azure with valid accounts for each service. 
 
-**- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo nulla elit, vitae scelerisque lorem maximus eu. Nulla vitae ante turpis. Etiam tincidunt venenatis mauris, ac volutpat augue rutrum sed. Vivamus dignissim est sed dolor luctus aliquet. Vestibulum cursus turpis nec finibus commodo.**
+You should also have installed your preferred git client. 
 
-**- Vivamus venenatis accumsan neque non lacinia. Sed maximus sodales varius. Proin eu nulla nunc. Proin scelerisque ipsum in massa tincidunt venenatis. Nulla eget interdum nunc, in vehicula risus. Etiam rutrum purus non eleifend lacinia.**
-
-**- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis vestibulum risus. Maecenas eu eros sit amet ligula consectetur pellentesque vel quis nisi.**
+You should have a text editor installed. 
 
 
 ## Learning Resources
 
-*List of relevant links and online articles that should give the attendees the knowledge needed to complete the challenge.*
-
-**- Lorem ipsum dolor sit amet, consectetur adipiscing elit.**
-
-**- Fusce commodo nulla elit, vitae scelerisque lorem maximus eu.** 
-
-**- Nulla vitae ante turpis. Etiam tincidunt venenatis mauris, ac volutpat augue rutrum sed. Vivamus dignissim est sed dolor luctus aliquet. Vestibulum cursus turpis nec finibus commodo.**
-
-## Advanced Challenges (Optional)
-
-*Too comfortable?  Eager to do more?  Try these additional challenges!*
-
-**- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo nulla elit, vitae scelerisque lorem maximus eu. Nulla vitae ante turpis. Etiam tincidunt venenatis mauris, ac volutpat augue rutrum sed. Vivamus dignissim est sed dolor luctus aliquet. Vestibulum cursus turpis nec finibus commodo. Vivamus venenatis accumsan neque non lacinia.**
-
-**- Sed maximus sodales varius. Proin eu nulla nunc. Proin scelerisque ipsum in massa tincidunt venenatis. Nulla eget interdum nunc, in vehicula risus. Etiam rutrum purus non eleifend lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis vestibulum risus. Maecenas eu eros sit amet ligula consectetur pellentesque vel quis nisi.**
+- There are many other GUI-based Git clients aside from GitHub Desktop. Feel free to explore them [here](https://git-scm.com/downloads/guis). 
+- If using VSCode as your editor, you can check [here](https://code.visualstudio.com/docs/editor/github) to learn more about the built-in Git capabilities, and integration with GitHub. Feel free to use VSCode's Git features instead of the command line or GUI client. 
