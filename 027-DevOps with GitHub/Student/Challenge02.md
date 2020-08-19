@@ -4,72 +4,43 @@
 
 [< Previous Challenge](./Challenge01.md) - **[Home](../readme.md)** - [Next Challenge>](./Challenge03.md)
 
-## Pre-requisites (Optional)
-
-*Include any technical pre-requisites needed for this challenge.  Typically, it is completion of one or more of the previous challenges if there is a dependency.*
-
-**- Lorem ipsum dolor sit amet, consectetur adipiscing elit.**
-
-**- Fusce commodo nulla elit, vitae scelerisque lorem maximus eu.** 
-
-**- Nulla vitae ante turpis. Etiam tincidunt venenatis mauris, ac volutpat augue rutrum sed. Vivamus dignissim est sed dolor luctus aliquet. Vestibulum cursus turpis nec finibus commodo.**
-
-**- Vivamus venenatis accumsan neque non lacinia. Sed maximus sodales varius. Proin eu nulla nunc. Proin scelerisque ipsum in massa tincidunt venenatis. Nulla eget interdum nunc, in vehicula risus.**
-
 
 ## Introduction
 
-Historically version control has been the first component that teams have implemented, it is one of the oldest and most well understood components of DevOps. Please take a moment to review the [Git handbook](https://guides.github.com/introduction/git-handbook/) to understand the basics of version control, specially focusing on the distributed version control technology, Git.
+Historically, version control has been the first component that teams implement as they start on a project. It is one of the oldest and most well understood components of DevOps. Version control systems allow developers to colloborate and simulataneously contribute to the same codebase. They can also help teams track versions (so code can be rolled back if bad changes are made) and track bugs, work, and testing by the team. Please take a moment to review the [Git handbook](https://guides.github.com/introduction/git-handbook/) to understand the basics of version control, focusing on the distributed version control technology, Git.
 
 
 ## Description
 
-Now that we have a basic understanding of version control and Git, lets get some code checked into source control. Since the language you use for development doesn’t have much of an impact on how we do DevOps we have provided you a simple Python web application to use.
+Now that we have a basic understanding of version control and Git, lets get some code checked into source control. DevOps best practices can apply to any programming language, so for today we have provided you a simple .NET Core web application to use.
 
-1. Clone the GitHub repository you created in the [first challenge](challenge01.md) to your local computer ([hint](https://help.github.com/en/articles/cloning-a-repository)).
+Begin by cloning the GitHub repository you created in the [first challenge](./Challenge01.md) to your local computer ([hint](https://help.github.com/en/articles/cloning-a-repository)).
 
-2. Download the code for the application [here](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/microsoft/WhatTheHack/tree/master/014-OSSDevOps/Student/Resources/Challenge-03/app)
+Next, download the code for the application [here](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/microsoft/WhatTheHack/tree/master/014-OSSDevOps/Student/Resources/Challenge-03/app). Unzip the download and copy the contents into the root of the repository you just cloned.
 
-3. Unzip the download and copy the contents into the root of the repository you cloned in step #1.
-
-4. Commit the files to your GitHub repository using VS Code or your favorite Git client.
-
-   **Be sure to include a # sign followed by the issue number for this challenge to the Git commit message.**
-   
-   For example: lets say you want to use the commit comment `my first commit` and your issue number is 55 your, your commit message should look like this  `my first commit #55`.
-
-   ([hint](https://help.github.com/en/articles/adding-a-file-to-a-repository-using-the-command-line))
+Finally, commit the files to your GitHub repository using your preferred Git client.
 
 
 ## Success Criteria
 
-You should be able to go to the GitHub site and under your repository see your code.
+Visit the GitHub page for your repository. Here, you should be able to see the files of our sample application. 
 
 
 ## Learning Resources
 
-*List of relevant links and online articles that should give the attendees the knowledge needed to complete the challenge.*
-
-**- Lorem ipsum dolor sit amet, consectetur adipiscing elit.**
-
-**- Fusce commodo nulla elit, vitae scelerisque lorem maximus eu.** 
-
-**- Nulla vitae ante turpis. Etiam tincidunt venenatis mauris, ac volutpat augue rutrum sed. Vivamus dignissim est sed dolor luctus aliquet. Vestibulum cursus turpis nec finibus commodo.**
+- Help cloning a repository via the [command line](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) or [GitHub Desktop](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/cloning-a-repository-from-github-to-github-desktop)
+- For those using GitHub Desktop, here is documentation on [commiting](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/committing-and-reviewing-changes-to-your-project) and [pushing](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/pushing-changes-to-github) changes to a repository.
+- If working with the command line, check out these articles on [commiting](https://docs.github.com/en/github/committing-changes-to-your-project/creating-and-editing-commits) and [pushing](https://docs.github.com/en/github/using-git/pushing-commits-to-a-remote-repository) changes.
+- Additionally, you may need to pull other people's changes into your local repository to stay in sync--see documentation for [command line](https://docs.github.com/en/github/using-git/getting-changes-from-a-remote-repository) and [GitHub Desktop](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/keeping-your-local-repository-in-sync-with-github).
 
 
-## Tips (Optional)
+## Tips
 
-*Add tips and hints here to give students food for thought.*
+- For a concise explanation of adding files to a repository via the command line, see [here](https://docs.github.com/en/github/managing-files-in-a-repository/adding-a-file-to-a-repository-using-the-command-line). 
+- To see how it's done in the GitHub portal, check [here](https://docs.github.com/en/github/managing-files-in-a-repository/managing-files-on-github). 
 
-**- Lorem ipsum dolor sit amet, consectetur adipiscing elit.**
+## Advanced Challenges
 
-**- Fusce commodo nulla elit, vitae scelerisque lorem maximus eu.** 
+In this challenge, we successfully added code to our repository! However, version control is about more than pushing code to a centralized location--it is critical in keeping developers in sync with changes made by anyone. Thus, we care not only about *pushing* code up to our repository, but also *pulling* changes down from it. 
 
-
-## Advanced Challenges (Optional)
-
-*Too comfortable?  Eager to do more?  Try these additional challenges!*
-
-**- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo nulla elit, vitae scelerisque lorem maximus eu. Nulla vitae ante turpis. Etiam tincidunt venenatis mauris, ac volutpat augue rutrum sed. Vivamus dignissim est sed dolor luctus aliquet. Vestibulum cursus turpis nec finibus commodo. Vivamus venenatis accumsan neque non lacinia.**
-
-**- Sed maximus sodales varius. Proin eu nulla nunc. Proin scelerisque ipsum in massa tincidunt venenatis. Nulla eget interdum nunc, in vehicula risus. Etiam rutrum purus non eleifend lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis vestibulum risus. Maecenas eu eros sit amet ligula consectetur pellentesque vel quis nisi.**
+To practice this, have another member of the team clone the repository to their local machine (or pull the new changes if already cloned). Let this person make a small change of their own to one of the files (perhaps adding a comment or a newline). Then, push the change back to GitHub. The rest of the team should then pull the change, to ensure they see it on their local machines. (See some of the above links on adding files and syncing changes if you get stuck). 
