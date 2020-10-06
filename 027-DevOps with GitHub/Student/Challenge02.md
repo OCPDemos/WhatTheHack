@@ -4,27 +4,23 @@
 
 [< Previous Challenge](./Challenge01.md) - **[Home](../readme.md)** - [Next Challenge>](./Challenge03.md)
 
-
 ## Introduction
 
 Historically, version control has been the first component that teams implement as they start on a project. It is one of the oldest and most well understood components of DevOps. Version control systems allow developers to colloborate and simulataneously contribute to the same codebase. They can also help teams track versions (so code can be rolled back if bad changes are made) and track bugs, work, and testing by the team. Please take a moment to review the [Git handbook](https://guides.github.com/introduction/git-handbook/) to understand the basics of version control, focusing on the distributed version control technology, Git.
-
 
 ## Description
 
 Now that we have a basic understanding of version control and Git, lets get some code checked into source control. DevOps best practices can apply to any programming language, so for today we have provided you a simple .NET Core web application to use.
 
-Begin by cloning the GitHub repository you created in the [first challenge](./Challenge01.md) to your local computer ([hint](https://help.github.com/en/articles/cloning-a-repository)).
+- Begin by cloning the GitHub repository you created in the [first challenge](./Challenge01.md) to your local computer ([hint](https://help.github.com/en/articles/cloning-a-repository)).
 
-Next, download the code for the application [here](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/microsoft/WhatTheHack/tree/master/014-OSSDevOps/Student/Resources/Challenge-03/app). Unzip the download and copy the contents into the root of the repository you just cloned.
+- Next, download the code for the application [here](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/microsoft/WhatTheHack/tree/master/014-OSSDevOps/Student/Resources/Challenge-03/app). Unzip the download and copy the contents into the root of the repository you just cloned.
 
-Finally, commit the files to your GitHub repository using your preferred Git client.
-
+- Finally, commit the files to your GitHub repository using your preferred Git client.
 
 ## Success Criteria
 
 Visit the GitHub page for your repository. Here, you should be able to see the files of our sample application. 
-
 
 ## Learning Resources
 
@@ -32,7 +28,6 @@ Visit the GitHub page for your repository. Here, you should be able to see the f
 - For those using GitHub Desktop, here is documentation on [commiting](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/committing-and-reviewing-changes-to-your-project) and [pushing](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/pushing-changes-to-github) changes to a repository.
 - If working with the command line, check out these articles on [commiting](https://docs.github.com/en/github/committing-changes-to-your-project/creating-and-editing-commits) and [pushing](https://docs.github.com/en/github/using-git/pushing-commits-to-a-remote-repository) changes.
 - Additionally, you may need to pull other people's changes into your local repository to stay in sync--see documentation for [command line](https://docs.github.com/en/github/using-git/getting-changes-from-a-remote-repository) and [GitHub Desktop](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/keeping-your-local-repository-in-sync-with-github).
-
 
 ## Tips
 

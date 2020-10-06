@@ -10,29 +10,31 @@ DevOps is a broad concept that encompasses people, processes, and tools. The too
 
 ## Description
 
-Begin by creating a GitHub account that you can use for this hack. You may use an existing account if you have one already.
+- Begin by creating a GitHub account that you can use for this hack. You may use an existing account if you have one already.
 
-Next, create an Azure subscription that you can use for this hack. If you already have a subscription, you may use it. Alternatively, you can get a free trial subscription [here]().
+- Next, create an Azure subscription that you can use for this hack. If you already have a subscription, you may use it. Alternatively, you can get a free trial subscription [here]().
 
-Log in to the Azure Portal to confirm that you have an active subscription that you can deploy cloud services to. 
+- Log in to the Azure Portal to confirm that you have an active subscription that you can deploy cloud services to. 
 
-Additionally, you will need to install a Git client. Two of the most popular ways of working with GitHub are the Git command line tool and GitHub Desktop (you only need one):
-- If you are comfortable with command line interfaces and want to try Git SCM, follow instructions to download and install [here](https://git-scm.com/downloads). 
-- If you prefer a GUI-based experience, download and install GitHub Desktop [here](https://desktop.github.com/). 
+- Additionally, you will need to install a Git client. Two of the most popular ways of working with GitHub are the Git command line tool and GitHub Desktop (you only need one):
 
-Finally, you will need some version of IDE or text editor to complete the challenges. You are welcome to use built in applications such as TextEdit or Notepad, though we highly recommend development tools such as [Visual Studio Code](https://code.visualstudio.com/) or [Atom](https://atom.io/). Follow the links to download and install, or use an editor of your choice!
+    - If you are comfortable with command line interfaces and want to try Git SCM, follow instructions to download and install [here](https://git-scm.com/downloads). 
+    - If you prefer a GUI-based experience, download and install GitHub Desktop [here](https://desktop.github.com/). 
+
+- Finally, you will need some version of IDE or text editor to complete the challenges. You are welcome to use built in applications such as TextEdit or Notepad, though we highly recommend development tools such as [Visual Studio Code](https://code.visualstudio.com/) or [Atom](https://atom.io/). Follow the links to download and install, or use an editor of your choice!
 
 
 ## Success Criteria
 
-You should now be able to login to both GitHub and Azure with valid accounts for each service. 
-
-You should also have installed your preferred git client. 
-
-You should have a text editor installed. 
-
+- You should now be able to login to both GitHub and Azure with valid accounts for each service. 
+- You should also have installed your preferred git client. 
+- You should have a text editor installed. 
 
 ## Learning Resources
 
 - There are many other GUI-based Git clients aside from GitHub Desktop. Feel free to explore them [here](https://git-scm.com/downloads/guis). 
 - If using VSCode as your editor, you can check [here](https://code.visualstudio.com/docs/editor/github) to learn more about the built-in Git capabilities, and integration with GitHub. Feel free to use VSCode's Git features instead of the command line or GUI client. 
+- [What is DevOps?](https://docs.microsoft.com/en-us/azure/devops/learn/what-is-devops)
+- [What is GitHub?](https://guides.github.com/activities/hello-world/)
+- [Azure DevOps vs GitHub](https://acloudguru.com/blog/engineering/azure-devops-vs-github-comparing-microsofts-devops-twins)
+- [GitHub Learning Lab](https://lab.github.com/)
