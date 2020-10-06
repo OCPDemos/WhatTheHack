@@ -15,7 +15,7 @@ This hack will help you learn:
 ## Challenges
  - [Challenge 0](./Student/challenge00.md) - Setup and Introduction
     - Install GitHub desktop  
- - [Challenge 1](./Student/challenge01.md) - Track your work with GitHub Projects
+ - [Challenge 1](./Student/challenge01.md) - Track your work with GitHub Project Boards
     - Create the project
     - Add issues for each challenge
     - Optional challenge: DevOps Boards + GitHub 

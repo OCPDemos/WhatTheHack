@@ -14,7 +14,7 @@ DevOps is a broad concept that encompasses people, processes, and tools. The too
 
 - Next, create an Azure subscription that you can use for this hack. If you already have a subscription, you may use it. Alternatively, you can get a free trial subscription [here]().
 
-- Log in to the Azure Portal to confirm that you have an active subscription that you can deploy cloud services to. 
+- Log in to the [Azure Portal](http://portal.azure.com) to confirm that you have an active subscription that you can deploy resources to. 
 
 - Additionally, you will need to install a Git client. Two of the most popular ways of working with GitHub are the Git command line tool and GitHub Desktop (you only need one):
 
@@ -36,5 +36,5 @@ DevOps is a broad concept that encompasses people, processes, and tools. The too
 - If using VSCode as your editor, you can check [here](https://code.visualstudio.com/docs/editor/github) to learn more about the built-in Git capabilities, and integration with GitHub. Feel free to use VSCode's Git features instead of the command line or GUI client. 
 - [What is DevOps?](https://docs.microsoft.com/en-us/azure/devops/learn/what-is-devops)
 - [What is GitHub?](https://guides.github.com/activities/hello-world/)
-- [Azure DevOps vs GitHub](https://acloudguru.com/blog/engineering/azure-devops-vs-github-comparing-microsofts-devops-twins)
+- [Azure DevOps vs. GitHub](https://acloudguru.com/blog/engineering/azure-devops-vs-github-comparing-microsofts-devops-twins)
 - [GitHub Learning Lab](https://lab.github.com/)
