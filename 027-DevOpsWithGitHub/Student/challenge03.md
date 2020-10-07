@@ -59,8 +59,8 @@ You should see all three environments in Azure.
     - When you have successfully created the staging environment, you can delete it as it will not be used in the upcoming challenges. 
 
 2. In this challenge, we setup three separate workflow files to handle `dev`, `test` and `prod`, however, this could be done with a single workflow with overriding template parameters and GitHub secrets. 
-    - Create a GitHub secret (called `targetEnv`) and set the *value* to `staging2`
-    - In your workflow, read the GitHub secret ([hint](https://docs.github.com/en/free-pro-team@latest/actions/reference/encrypted-secrets))
+    - Create a GitHub secret (called `targetEnv`) and set the *value* to `staging2` ([hint](https://docs.github.com/en/free-pro-team@latest/actions/reference/encrypted-secrets))
+    - In your workflow, read the GitHub secret ([hint](https://docs.github.com/en/free-pro-team@latest/actions/reference/encrypted-secrets#using-encrypted-secrets-in-a-workflow))
 and pass the value as a overriding template parameter (as described in Advanced Challenge #1)
 
 NOTE: If you are interested in learning more about Infrastructure as Code, there are [multiple](https://github.com/microsoft/WhatTheHack) What the Hacks that cover it in greater depth.
