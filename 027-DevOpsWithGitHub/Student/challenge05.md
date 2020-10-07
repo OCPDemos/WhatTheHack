@@ -1,39 +1,31 @@
 # What the Hack: DevOps with GitHub 
 
-## Challenge 5 – Azure Pipelines: Continuous Integration
+## Challenge 5 – Continuous Delivery
 [< Previous](challenge04.md) - [Home](../readme.md) - [Next >](challenge06.md)
 
 ### Introduction
 
-Great we now have some infrastructure and some code, lets build it. In DevOps we automate this process using something called Continuous Integration. Take a moment to review the article below to gain a better understanding of what CI is. 
+In DevOps after we automate our build process, we want to automate our release process, we do this with a technique called Continuous Delivery. Please take a moment to review this brief article talking about why this is important. 
 
-1. [What is Continuous Integration?](https://docs.microsoft.com/en-us/azure/devops/learn/what-is-continuous-integration)
-
+1. [What is Continuous Delivery?](https://docs.microsoft.com/en-us/azure/devops/learn/what-is-continuous-delivery)
 
 ### Challenge
 
-In Azure DevOps we use Azure Pipelines to automate our build process. For our application the build process will not only compile our .NET Core application, it should test it, and package it into a Docker Container and publish the container to Azure Container Registry.
+In Azure DevOps we use an Azure Pipeline to release our software. In this challenge we will deploy our container out to our dev, test, and prod environments. 
 
-1. Use the **classic editor** to create a build pipeline using the **ASP.NET Core** template (the one with the icon with the black box) and name it `CI Build`
-2. Enable continuous integration on your build pipeline ([hint](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started-designer?view=azure-devops&tabs=new-nav#enable-continuous-integration-ci))
-3. Review the 4 .NET Core build tasks that were added to our build pipeline by default. These are the 4 major steps to building a .NET Core application ([Hint](https://docs.microsoft.com/en-us/azure/devops/pipelines/languages/dotnet-core?view=azure-devops&tabs=designer)).
-   1. First we call the `restore` command, this will get all the dependencies that our .net core application needs to compile
-   2. Next we call the `build` command, this will actually compile our code
-   3. Next we call the `test` command, this will execute all our unit tests 
-   4. The last .NET Core build task in the template is to `publish` the .net core app. The template publishes the application to a zip file, we don’t want it zipped so undo this setting. Additionally, change the output argument to here `$(System.DefaultWorkingDirectory)/PublishedWebApp` 
-4. You can delete the `publish artifact` step since we are going to create a container and publish it to Azure Container Registry.
-5. Now that our .NET core application is compiled and all the unit tests have been run, we need to package it into a Docker Container and publish the container to Azure Container Registry, to do this we are going to add a docker task to our build pipeline.
-   1. We want to use the `buildAndPush` command with the following Docker file `**/Dockerfile`, build context `$(System.DefaultWorkingDirectory)/PublishedWebApp` and tag `$(Build.BuildId)` (NOTE: here we are dynamically pulling the build number from Azure DevOps at run time)
-   2. Next we need to connect it to the container registry and repository (i.e. `<prefix>devopsimage`) that we setup in our infrastructure as code challenge.
-6. Lets kick off a build manually to ensure that we have a working build.
-7. Next lets notify the team if the build breaks by setting a **Build Option** to create a new Work Item. 
-8.  Now, make and check in a code change that will break the build. Ensure that a work item gets created. 
-9.  Referencing the work item that was automatically created, fix your code, ensure the build looks good, and then resolve the work item that was created. 
+1. Create a new Release Pipeline using the Azure App Service Deployment Template
+2. To start off our deployment will only have one stage, lets call it `dev`
+3. The output of our CI Build pipeline will be the input artifact to our CD Release pipeline, add it. 
+4. Enable Continuous deployment so that each time the CI pipeline finishes successfully, this pipeline will start. 
+5. If you look at the tasks for our `dev` stage you will see a single `Deploy Azure App Service` task, we just need to configure it. 
+   1. Select your subscription, a app service type of `Web App for Containers (Linux)`, point it at your dev instance, enter your registry name `<prefix>devopsreg.azurecr.io` (NOTE: here we need to fully qualify it), your image/repository name `<prefix>devopsimage`, and your tag `$(Build.BuildId)` (NOTE: here we are dynamically pulling the build number from Azure DevOps at run time)
+6. Manually kick off a release and check that your application got deployed to your dev instance. 
+7. If everything worked, go ahead and clone the `dev` stage two more times for `test` and `prod`.
+   1. The only change you need to make in the `test` and `prod` stages is pointing to the `test` and `prod` respectively. 
+8. For the test and prod stages, set a pre-deployment condition so that one of your teammates has to approve any deployment before it goes to production. 
 
 ### Success Criteria
 
-1. Your build should complete without any errors.
-2. Review the test results generated by your build. HINT: look in the logs from your build to find where the test run was published. 
-3. Using the Azure Portal or CLI you should see your container in your Azure Container Registry Repository
+1. Make a small change to your code (for example: update some fo the HTML on the Index page `/Application/aspnet-core-dotnet-core/Views/Home/Index.cshtml`), it should automatically trigger a build and release to your `dev` environment. If the change looks good, get your teammate to approve it to release to `test`. Repeat again for `prod`.
 
 [< Previous](challenge04.md) - [Home](../readme.md) - [Next >](challenge06.md)
