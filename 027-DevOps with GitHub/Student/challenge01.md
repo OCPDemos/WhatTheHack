@@ -29,7 +29,8 @@ Review the following introduction to GitHub project boards: [GitHub project boar
 
 ### Success Criteria
 
-- You have a project board using the automation kanban template with 9 issues (8 open, 1 closed).
-- You have experienced creating and managing Agile project management using GitHub project boards.
+- You have a project board using the automation kanban template with 9 issues (8 open, 1 closed by a team member).
+- New issues automatically appear under the "To do" column.
+- Closed issues automatically appear under the "Done" column.
 
 [< Previous](challenge00.md) - [Home](../readme.md) - [Next >](challenge02.md)
