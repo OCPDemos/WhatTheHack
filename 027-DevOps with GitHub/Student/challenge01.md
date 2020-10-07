@@ -1,7 +1,7 @@
 # What the Hack: DevOps with GitHub
 
 ## Challenge 1 - Track your work with GitHub project boards
-[Back](challenge00.md) - [Home](../readme.md) - [Next](challenge02.md)
+[< Previous](challenge00.md) - [Home](../readme.md) - [Next >](challenge02.md)
 
 ### Introduction
 
@@ -14,7 +14,7 @@ Agile project management is a key component of building a modern DevOps culture 
 
 To help you with Agile project management, there is GitHub project boards. With GitHub project boards, you can quickly and easily start tracking your backlog, tasks, issues/bugs and features associated with your project.  
 
-Review the following introduction to GitHub Projects: [GitHub project boards](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/about-project-boards).
+Review the following introduction to GitHub project boards: [GitHub project boards](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/about-project-boards).
 
 ### Challenge
 
@@ -32,4 +32,4 @@ Review the following introduction to GitHub Projects: [GitHub project boards](ht
 - You have a project board using the automation kanban template with 9 issues (8 open, 1 closed).
 - You have experienced creating and managing Agile project management using GitHub project boards.
 
-[Back](challenge00.md) - [Home](../readme.md) - [Next](challenge02.md)
+[< Previous](challenge00.md) - [Home](../readme.md) - [Next >](challenge02.md)

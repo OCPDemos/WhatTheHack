@@ -2,7 +2,7 @@
 
 # Challenge 6 - Branching and Policies
 
-[< Previous Challenge](./Challenge05.md) - **[Home](../readme.md)** - [Next Challenge>](./Challenge07.md)
+[< Previous](challenge05.md) - [Home](../readme.md) - [Next >](challenge07.md)
 
 ## Introduction
 
@@ -50,3 +50,5 @@ In this challenge, we focused on creating a feature branch directly off of the m
 If you would like to explore this flow, try to set up your repository for these 'phased deployments.' Begin by creating a development branch off of your main branch. On the development branch, repeat the flow from above. When you are ready to release, create and complete a pull request merging the development branch into the main branch. 
 
 IMPORTANT: Do not delete the development branch after completing the deployment. You will want to use this same branch to repeat the process for your next deployment. 
+
+[< Previous](challenge05.md) - [Home](../readme.md) - [Next >](challenge07.md)

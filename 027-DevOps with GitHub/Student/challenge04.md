@@ -2,7 +2,7 @@
 
 # Challenge 4 - Continuous Integration
 
-[< Previous Challenge](./Challenge03.md) - **[Home](../readme.md)** - [Next Challenge>](./Challenge05.md)
+[< Previous](challenge03.md) - [Home](../readme.md) - [Next >](challenge05.md)
 
 
 ## Introduction
@@ -46,3 +46,5 @@ View the workflow logs to see successful completion of each step, including buil
 As part of the application, we provided a series of unit tests. Try adding step(s) to your workflow in order to run these tests on your code! (As a hint, you would want to use [this command](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-test) to run unit tests on a .NET Core application.)
 
 Adding automated tests to the CI process can help prevent errors from ever reaching production. Thus, writing and running unit tests is considered a DevOps best practice.
+
+[< Previous](challenge03.md) - [Home](../readme.md) - [Next >](challenge05.md)

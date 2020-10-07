@@ -2,7 +2,7 @@
 
 # Challenge 0 - Setup
 
-**[Home](../readme.md)** - [Next Challenge>](./Challenge01.md)
+[Home](../readme.md) - [Next >](challenge01.md)
 
 ## Introduction
 
@@ -38,3 +38,5 @@ DevOps is a broad concept that encompasses people, processes, and tools. The too
 - [What is GitHub?](https://guides.github.com/activities/hello-world/)
 - [Azure DevOps vs. GitHub](https://acloudguru.com/blog/engineering/azure-devops-vs-github-comparing-microsofts-devops-twins)
 - [GitHub Learning Lab](https://lab.github.com/)
+
+[Home](../readme.md) - [Next >](challenge01.md)

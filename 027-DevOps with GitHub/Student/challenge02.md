@@ -2,7 +2,7 @@
 
 # Challenge 2 - Repositories
 
-[< Previous Challenge](./Challenge01.md) - **[Home](../readme.md)** - [Next Challenge>](./Challenge03.md)
+[< Previous](challenge01.md) - [Home](../readme.md) - [Next >](challenge03.md)
 
 ## Introduction
 
@@ -12,7 +12,7 @@ Historically, version control has been the first component that teams implement 
 
 Now that we have a basic understanding of version control and Git, lets get some code checked into source control. DevOps best practices can apply to any programming language, so for today we have provided you a simple .NET Core web application to use.
 
-- Begin by cloning the GitHub repository you created in the [first challenge](./Challenge01.md) to your local computer ([hint](https://help.github.com/en/articles/cloning-a-repository)).
+- Begin by cloning the GitHub repository you created in the [first challenge](challenge01.md) to your local computer ([hint](https://help.github.com/en/articles/cloning-a-repository)).
 
 - Next, download the code for the application [here](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/microsoft/WhatTheHack/tree/master/014-OSSDevOps/Student/Resources/Challenge-03/app). Unzip the download and copy the contents into the root of the repository you just cloned.
 
@@ -39,3 +39,5 @@ Visit the GitHub page for your repository. Here, you should be able to see the f
 In this challenge, we successfully added code to our repository! However, version control is about more than pushing code to a centralized location--it is critical in keeping developers in sync with changes made by anyone. Thus, we care not only about *pushing* code up to our repository, but also *pulling* changes down from it. 
 
 To practice this, have another member of the team clone the repository to their local machine (or pull the new changes if already cloned). Let this person make a small change of their own to one of the files (perhaps adding a comment or a newline). Then, push the change back to GitHub. The rest of the team should then pull the change, to ensure they see it on their local machines. (See some of the above links on adding files and syncing changes if you get stuck). 
+
+[< Previous](challenge01.md) - [Home](../readme.md) - [Next >](challenge03.md)

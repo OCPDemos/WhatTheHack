@@ -2,7 +2,7 @@
 
 # Challenge 8 - Security
 
-[< Previous Challenge](./Challenge07.md) - **[Home](../readme.md)** - [Next Challenge>](./Challenge09.md)
+[< Previous](challenge07.md) - [Home](../readme.md) - [Next >](challenge09.md)
 
 ## Introduction
 
@@ -43,3 +43,5 @@ Finally, you should be able to view the results of the CodeQL Analysis in the Se
 ## Tips
 
 - If you are stuck, check out the 'Security' tab of your repository on GitHub.
+
+[< Previous](challenge07.md) - [Home](../readme.md) - [Next >](challenge09.md)
