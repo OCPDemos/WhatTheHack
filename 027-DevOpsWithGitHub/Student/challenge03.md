@@ -52,7 +52,7 @@ You should see all three environments in Azure.
 
 ### Advanced Challenges
 
-In this challenge, we edited the ARM template for each environment (dev, test, prod) but there are ways of overriding template parameters when you pass the ARM template to the Azure CLI. Learn more [here](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-cli#parameters).
+In this challenge, we edited the ARM template for each environment (dev, test, prod) but there are ways of overriding template parameters when you pass the ARM template to the Azure CLI. Learn more about template paramters [here](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-cli#parameters).
 
 1. Create a fourth environment, called `staging`, by overriding the template parameters when you call the Azure CLI action.
 2. When you have successfully created the staging environment, you can delete it as it will not be used in the upcoming challenges. 
