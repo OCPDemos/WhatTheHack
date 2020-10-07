@@ -21,12 +21,12 @@ In this challenge, you will build and test the .NET Core application, build a co
 1. Create a new `.NET Core` workflow from the GitHub Actions marketplace ([hint](https://github.com/actions/starter-workflows/blob/dacfd0a22a5a696b74a41f0b49c98ff41ef88427/ci/dotnet-core.yml))
 2. Configure path filters to *only* trigger this workflow for changes in the `/Application` folder
     
-3. Review the predefined steps used to build the .NET Core application (note: for each step below, you may need to update each command to pass the path to the  `.csproj` as an argument):
-   - First we call the `restore` command, this will get all the dependencies that our .NET Core application needs to compile
-   - Next we call the `build` command, this will actually compile our code
-   - Next we call the `test` command, this will execute all our unit tests 
+3. Review and update the predefined steps used to build the .NET Core application (note: for each step below, you may need to update each command to pass the path to the  `.csproj` as an argument):
+   - `restore` - will get all the dependencies. Update with an [argument](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-build#arguments) to the application csproj file: `./Application/aspnet-core-dotnet-core/aspnet-core-dotnet-core.csproj`
+   - `build` - will actually compile our code. Update with an [argument](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-build#arguments) to the application csproj file: `./Application/aspnet-core-dotnet-core/aspnet-core-dotnet-core.csproj`
+   - `test` - will execute all our unit tests. Update with an [argument](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-build#arguments) to the unit test csproj file: `./Application/aspnet-core-dotnet-core.UnitTests/aspnet-core-dotnet-core.UnitTests.csproj` 
 
-4. Test the workflow by making a small change to the application code (i.e., add a comment). Commit, push and ensure the workflow completes successfully. You may need to 
+4. Test the workflow by making a small change to the application code (i.e., add a comment). Commit, push and ensure the workflow completes successfully.
 
 At this point, any changes pushed to the `/Application` folder automatically triggers the workflow...and that is Continuous Integration! Now, we need to extend our workflow with steps to build a container image and push it to the registry.
 
@@ -39,6 +39,8 @@ At this point, any changes pushed to the `/Application` folder automatically tri
         - `registry` - Server address of Docker registry. Set this to "`registryName`.azurecr.io" - replacing `registryName` with the `<prefix>devopsreg` value in your ARM template file (line #26)
         - `repository` - The repository (or 'folder') to target in the registry. Set this to "`imageName`.azurecr.io" - replacing `imageName` with the `<prefix>devopsimage` value in your ARM template file (line #31)
         - `tags` - This needs to be a unique value each time, as this is used to version the images in the registry. GitHub makes [environment variables](https://docs.github.com/en/free-pro-team@latest/actions/reference/context-and-expression-syntax-for-github-actions#github-context) available that helps with this. Set `tags` to `${{ GITHUB_RUN_NUMBER }}`.
+
+6. Test the workflow by making a small change to the application code (i.e., add a comment). Commit, push, monitor the workflow and .
 
 ## Success Criteria
 
