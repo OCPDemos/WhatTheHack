@@ -28,13 +28,13 @@ First, we are going to deploy the dev environment:
 
 When your workflow completes successfully, go to the Azure portal to see the environment. If everything worked, create the test environment:
 
-1. Copy your dev workflow file and use it to create a new workflow file for `test`
+1. Copy your dev workflow file and use it to create a new workflow file for `test` (named deployTest.yml)
     - Be sure to update the `paths` in your workflow file (i.e., ".github/workflows/deployTest.yml")
 2. Update the webAppName template parameter (line 6 in the [ARM template](./Code/ARM-Templates/container-webapp-template.json)) to `<prefix>devops-test`.
 
 When your workflow completes successfully, go to the Azure portal to see the test environment. If everything worked, create the prod environment:
 
-1. Copy your test workflow file and use it to create a new workflow file for `prod`
+1. Copy your test workflow file and use it to create a new workflow file for `prod` (named deployProd.yml)
     - Be sure to update the `paths` in your workflow file (i.e., ".github/workflows/deployProd.yml")
 2. Update the webAppName template parameter (line 6 in the [ARM template](./Code/ARM-Templates/container-webapp-template.json)) to `<prefix>devops-prod`.
 
