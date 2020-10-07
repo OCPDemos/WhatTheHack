@@ -22,7 +22,7 @@ Extend the workflow you created in Challenge #4 to:
       - `images` (i.e., `<prefix>devopsreg`.azurecr.io/`<prefix>devopsimage`:`${{ GITHUB_RUN_NUMBER }}`)
 2. Make a small change to your application  (i.e.,`/Application/aspnet-core-dotnet-core/Views/Home/Index.cshtml`), commit, push, monitor the workflow and see if the change shows up on the dev instance of the website.
 
-**NOTE**: Normally, we would have you configure release gates next - which would require some kind of manual approval *before* deploying to test and prod respectively. But, as of 10/7/20, GitHub doesn't offer this natively - although it is on the [GitHub roadmap](https://github.com/github/roadmap/issues/99), due to be available by the end of 2020.
+**NOTE**: Normally, we would have you configure [release gates](https://docs.microsoft.com/en-us/azure/devops/pipelines/release/approvals/?view=azure-devops) next - which would require some type of manual approval/human intervention *before* deploying to test and prod respectively. But, as of 10/7/20, GitHub doesn't offer this natively - although it is on the [GitHub roadmap](https://github.com/github/roadmap/issues/99), due to be available by the end of 2020.
 
 ### Success Criteria
 
