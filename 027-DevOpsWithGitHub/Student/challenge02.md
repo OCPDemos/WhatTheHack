@@ -35,7 +35,7 @@ Now that we have a basic understanding of version control and Git, lets get some
 - For a concise explanation of adding files to a repository via the command line, see [here](https://docs.github.com/en/github/managing-files-in-a-repository/adding-a-file-to-a-repository-using-the-command-line). 
 - To see how it's done in the GitHub portal, check [here](https://docs.github.com/en/github/managing-files-in-a-repository/managing-files-on-github). 
 
-### Advanced Challenges
+### Advanced Challenges (optional)
 
 In this challenge, we successfully added code to our repository! However, version control is about more than pushing code to a centralized location--it is critical in keeping developers in sync with changes made by anyone. Thus, we care not only about *pushing* code up to our repository, but also *pulling* changes down from it. 
 

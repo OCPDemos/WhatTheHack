@@ -51,12 +51,17 @@ You should see all three environments in Azure.
 - [Understanding workflow path filters](https://docs.github.com/en/free-pro-team@latest/actions/reference/workflow-syntax-for-github-actions#onpushpull_requestpaths)
 - [Migrating from Azure Pipelines to GitHub Actions](https://docs.github.com/en/free-pro-team@latest/actions/reference/workflow-syntax-for-github-actions#onpushpull_requestpaths)
 
-### Advanced Challenges
+### Advanced Challenges (optional)
 
-In this challenge, we edited the ARM template for each environment (`dev`, `test`, `prod`) but there are ways of overriding template parameters when you pass the ARM template to the Azure CLI. Learn more about template paramters [here](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-cli#parameters).
+1. In this challenge, we edited the ARM template for each environment (`dev`, `test`, `prod`) but there are ways of [overriding template parameters](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-cli#parameters) when you pass the ARM template to the Azure CLI.
 
-1. Create a fourth environment, called `staging`, by overriding the template parameters in the Azure CLI action.
-2. When you have successfully created the staging environment, you can delete it as it will not be used in the upcoming challenges. 
+    - Create a fourth environment, called `staging`, by overriding the template parameters in the Azure CLI action. ([hint](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-cli#parameters))
+    - When you have successfully created the staging environment, you can delete it as it will not be used in the upcoming challenges. 
+
+2. In this challenge, we setup three separate workflow files to handle `dev`, `test` and `prod`, however, this could be done with a single workflow in conjunction with overriding template parameters and using GitHub secrets. 
+    - Create a GitHub secret (called `targetEnv`) and set the *value* to `staging2`
+    - In your workflow, read the GitHub secret ([hint](https://docs.github.com/en/free-pro-team@latest/actions/reference/encrypted-secrets))
+and pass the value as a overriding template parameter (as described in Advanced Challenge #1)
 
 NOTE: If you are interested in learning more about Infrastructure as Code, there are [multiple](https://github.com/microsoft/WhatTheHack) What the Hacks that cover it in greater depth.
 
