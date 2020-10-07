@@ -33,14 +33,14 @@ At this point, any changes pushed to the `/Application` folder automatically tri
 5. Add a GitHub Action to your workflow to build and push the container image to the registry ([hint](https://github.com/marketplace/actions/build-and-push-docker-images))
     - To authenticate to ACR, you may need to get the username and password to your ACR instance and save as GitHub secrets ([hint](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-authentication#admin-account))
     - Key parameters to configure for Docker:
-        - `dockerfile` - The path to the Dockerfile - a critical parameter. You will need to point to the Dockerfile in the `/Application` folder
+        - `dockerfile` - The path to the Dockerfile - a critical parameter. You will need to point to the Dockerfile in the `/Application` folder.
         - `username` - Used to login to ACR. You will need to read from the GitHub secret you created.
         - `password` - Used to login to a ACR. You will need to read from the GitHub secret you created.
-        - `registry` - Server address of Docker registry. Set this to "`registryName`.azurecr.io" - replacing `registryName` with the `<prefix>devopsreg` value in your ARM template file (line #26)
-        - `repository` - The repository (or 'folder') to target in the registry. Set this to "`imageName`.azurecr.io" - replacing `imageName` with the `<prefix>devopsimage` value in your ARM template file (line #31)
-        - `tags` - This needs to be a unique value each time, as this is used to version the images in the registry. GitHub makes [environment variables](https://docs.github.com/en/free-pro-team@latest/actions/reference/context-and-expression-syntax-for-github-actions#github-context) available that helps with this. Set `tags` to `${{ GITHUB_RUN_NUMBER }}`.
+        - `registry` - Server address of Docker registry. Set this to "`registryName`.azurecr.io" - replacing `registryName` with the `<prefix>devopsreg` value in your ARM template file (line #26).
+        - `repository` - The repository (or 'folder') to target in the registry. Set this to "`imageName`.azurecr.io" - replacing `imageName` with the `<prefix>devopsimage` value in your ARM template file (line #31).
+        - `tags` - This needs to be a unique value each time, as this is used to version the images in the repository. GitHub makes [environment variables](https://docs.github.com/en/free-pro-team@latest/actions/reference/context-and-expression-syntax-for-github-actions#github-context) available that helps with this. Set `tags` to `${{ GITHUB_RUN_NUMBER }}`.
 
-6. Test the workflow by making a small change to the application code (i.e., add a comment). Commit, push, monitor the workflow and .
+6. Test the workflow by making a small change to the application code (i.e., add a comment). Commit, push, monitor the workflow and verify that a new container image is built, uniquely tagged and pushed to ACR after each successful workflow run.
 
 ### Success Criteria
 
