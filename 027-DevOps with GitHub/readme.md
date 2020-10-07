@@ -45,10 +45,6 @@ This hack will help you learn:
  - [Challenge 9](./Student/challenge09.md) - GitHub Packages
     - Needs to be simple and straightfoward
 
-
-## Ideas
-Kevin does odds. Will does even.
-
 ## Prerequisites
 - Your own Azure subscription with Owner access
 - [Visual Studio Code](https://code.visualstudio.com)
