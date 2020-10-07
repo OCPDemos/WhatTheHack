@@ -1,10 +1,10 @@
 # What The Hack - DevOps with GitHub
 
-# Challenge 4 - Continuous Integration (CI)
+## Challenge 4 - Continuous Integration (CI)
 
 [< Previous](challenge03.md) - [Home](../readme.md) - [Next >](challenge05.md)
 
-## Introduction
+### Introduction
 
 With our existing repository and newly-created Azure App Service, we have laid the foundation for our application. Now, we must connect our source code and its destination. The first step in this journey is called Continuous Integration (CI). 
 
@@ -14,7 +14,7 @@ Review the following articles:
 - [About continuous integration](https://docs.github.com/en/actions/building-and-testing-code-with-continuous-integration/about-continuous-integration)
 - [Setting up continuous integration using workflow templates](https://docs.github.com/en/actions/building-and-testing-code-with-continuous-integration/setting-up-continuous-integration-using-github-actions)
 
-## Challenge
+### Challenge
 
 In this challenge, you will build and test the .NET Core application, build a container image and push it to Azure Container Registry (ACR). 
 
@@ -42,19 +42,19 @@ At this point, any changes pushed to the `/Application` folder automatically tri
 
 6. Test the workflow by making a small change to the application code (i.e., add a comment). Commit, push, monitor the workflow and .
 
-## Success Criteria
+### Success Criteria
 
 - Any changes pushed to the `/Application` folder automatically triggers the workflow 
 - .NET Core restore, build and test steps completes successfully
 - A new container image is built, uniquely tagged and pushed to ACR after each successful workflow run
 
-## Learning Resources
+### Learning Resources
 
 - [Introduction to GitHub Actions](https://docs.github.com/en/free-pro-team@latest/actions/learn-github-actions/introduction-to-github-actions)
 - [Understanding workflow path filters](https://docs.github.com/en/free-pro-team@latest/actions/reference/workflow-syntax-for-github-actions#onpushpull_requestpaths)
 - [dotnet commands](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet#dotnet-commands)
 
-## Tips
+### Tips
 
 - If you are having trouble finding a starting point, try clicking over to the 'Actions' tab of your GitHub repository. 
 - Take advantage of the prebuilt workflow templates if you find one that might work! 
