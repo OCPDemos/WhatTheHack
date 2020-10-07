@@ -33,4 +33,9 @@ Review the following introduction to GitHub project boards: [GitHub project boar
 - New issues automatically appear under the "To do" column
 - Closed issues automatically appear under the "Done" column
 
+### Advanced Challenges (optional)
+
+1. You can integrate Azure DevOps Boards with GitHub if you need advanced project management features. 
+    -  Follow the steps [here](https://docs.microsoft.com/en-us/azure/devops/boards/github/?view=azure-devops) to integrate Azure Boards with GitHub.
+
 [< Previous](challenge00.md) - [Home](../readme.md) - [Next >](challenge02.md)
