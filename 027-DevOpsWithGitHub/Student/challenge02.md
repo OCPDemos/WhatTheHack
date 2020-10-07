@@ -16,13 +16,12 @@ Now that we have a basic understanding of version control and Git, lets get some
 
 - Next, download the code for the application [here](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/microsoft/WhatTheHack/tree/master/027-DevOpsWithGitHub/Student/Resources/Code). Unzip the download and copy the contents into the root of the repository you just cloned.
 
-
 - Finally, commit the files to your GitHub repository using your preferred Git client.
 
 ## Success Criteria
 
-- Visit the GitHub page for your repository. Here, you should be able to see the files of our sample application. 
-- The "Application" and "ArmTemplates"
+- Your repo is cloned to your local machine and sync'd with GitHub.com
+- The "Application" and "ArmTemplates" folders are at the root of your GitHub repository
 
 ## Learning Resources
 
