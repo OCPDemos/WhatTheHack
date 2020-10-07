@@ -14,7 +14,7 @@ Now that we have a basic understanding of version control and Git, lets get some
 
 - Begin by cloning the GitHub repository you created in the [first challenge](challenge01.md) to your local computer ([hint](https://help.github.com/en/articles/cloning-a-repository)).
 
-- Next, download the code for the application [here](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/microsoft/WhatTheHack/tree/master/010-AzureDevOps/Student/Resources/Code). Unzip the download and copy the contents into the root of the repository you just cloned.
+- Next, download the code for the application [here](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/microsoft/WhatTheHack/tree/master/027-DevOpsWithGitHub/Student/Resources/Code). Unzip the download and copy the contents into the root of the repository you just cloned.
 
 
 - Finally, commit the files to your GitHub repository using your preferred Git client.
@@ -22,6 +22,7 @@ Now that we have a basic understanding of version control and Git, lets get some
 ## Success Criteria
 
 - Visit the GitHub page for your repository. Here, you should be able to see the files of our sample application. 
+- The "Application" and "ArmTemplates"
 
 ## Learning Resources
 
