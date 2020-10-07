@@ -27,10 +27,10 @@ This hack will help you learn:
     - Create the Azure app service via GH action or manually in the portal
     - Mention and link to the upcoming ability to manually kick off a workflow
  - [Challenge 4](./Student/challenge04.md) - Continuous Integration
-    - Add steps to deploy to the Azure app service
-    - Maybe have them do this inside of VS Code 
- - [Challenge 5](./Student/challenge05.md) - Continuous Delivery
     - Create a workflow to build and test and package
+ - [Challenge 5](./Student/challenge05.md) - Continuous Delivery
+   - Add steps to deploy to the Azure app service
+   - Maybe have them do this inside of VS Code 
  - [Challenge 6](./Student/challenge06.md) - Branching & Policies
     - Talk about Branch protection rules https://docs.github.com/en/github/administering-a-repository/about-protected-branches
     - Implement feature branches to push a change 
