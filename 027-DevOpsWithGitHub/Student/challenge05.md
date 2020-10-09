@@ -1,11 +1,11 @@
 # What the Hack: DevOps with GitHub 
 
-## Challenge 5 – Continuous Delivery
+## Challenge 5 – Continuous Delivery (CD)
 [< Previous](challenge04.md) - [Home](../readme.md) - [Next >](challenge06.md)
 
 ### Introduction
 
-In DevOps after we automate our build process, we want to automate our release process, we do this with a technique called Continuous Delivery. Please take a moment to review this brief article talking about why this is important. 
+In DevOps after we automate our build process, we want to automate our release process, we do this with a technique called Continuous Delivery (CD). Please take a moment to review this brief article talking about why this is important. 
 
 - [What is Continuous Delivery?](https://docs.microsoft.com/en-us/azure/devops/learn/what-is-continuous-delivery)
 
