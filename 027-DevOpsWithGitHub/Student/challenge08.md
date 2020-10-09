@@ -12,7 +12,6 @@ One good DevOps practice is to enable protections against code-level vulnerabili
 
 In addition to these manual processes, GitHub also provides automated tools for scanning code for common errors. In this challenge, you will utilize the built in Dependabot which provides alerts if your repository contains libraries, packages, or external dependencies with known vulnerabilities. You will also set up a workflow with CodeQL which can scan your source code for common coding errors or basic security flaws.
 
-
 ### Challenge
 
 In this challenge, you will improve the security of your repository using some of GitHub's built-in tools. 
@@ -23,15 +22,13 @@ In this challenge, you will improve the security of your repository using some o
 
 - (NOTE: Skip this step while code scanning is in Beta.) Finally, set up and run a Code scanning workflow for the repository using GitHub's 'CodeQL Analysis.' This workflow can run either on each pull request or on a schedule, and it checks your code for common vulnerabilities or errors. 
 
-
 ## Success Criteria
 
-In GitHub, you should be able to view the 'closed' pull request which either created or updated the Security policy (SECURITY.md file). 
+- In GitHub, you should be able to view the 'closed' pull request which either created or updated the Security policy (SECURITY.md file). 
 
-Additionally, you should be able to view a new 'open' pull request created by Dependabot requesting an update of a dependency. 
+- Additionally, you should be able to view a new 'open' pull request created by Dependabot requesting an update of a dependency. 
 
-Finally, you should be able to view the results of the CodeQL Analysis in the Security tab. 
-
+- Finally, you should be able to view the results of the CodeQL Analysis in the Security tab. 
 
 ## Learning Resources
 
