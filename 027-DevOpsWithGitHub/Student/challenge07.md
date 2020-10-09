@@ -32,4 +32,5 @@ In this challenge we will look at some of the telemetry that has already been co
     > NOTE: If your site doesn’t have any exceptions, you can create one easily by trying to go to a page that doesn’t exist.
 
     > NOTE: It takes a min or two after an event happens for it to make its way to Application Insights and for it to be indexed so you can see it in the portal.
+    
 [< Previous](challenge06.md) - [Home](../readme.md) - [Next >](challenge08.md)

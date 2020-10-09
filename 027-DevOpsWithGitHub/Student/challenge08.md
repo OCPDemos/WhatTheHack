@@ -2,7 +2,7 @@
 
 ## Challenge 8 - Security
 
-[< Previous](challenge07.md) - [Home](../readme.md) - [Next >](challenge09.md)
+[< Previous](challenge07.md) - [Home](../readme.md)
 
 ### Introduction
 
