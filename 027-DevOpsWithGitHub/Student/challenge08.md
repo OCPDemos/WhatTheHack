@@ -25,9 +25,7 @@ In this challenge, you will improve the security of your repository using some o
 ## Success Criteria
 
 - In GitHub, you should be able to view the 'closed' pull request which either created or updated the Security policy (SECURITY.md file). 
-
 - Additionally, you should be able to view a new 'open' pull request created by Dependabot requesting an update of a dependency. 
-
 - Finally, you should be able to view the results of the CodeQL Analysis in the Security tab. 
 
 ## Learning Resources
