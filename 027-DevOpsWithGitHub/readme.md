@@ -38,12 +38,10 @@ This hack will help you learn:
     - Choice: use feature branch + master or dev branch (to support phased deployment) 
  - [Challenge 7](./Student/challenge07.md) - Monitoring: Application Insights
     - Create and add app insights to project (copy shawn's steps)
- - [Challenge 8](./Student/challenge08.md) - Azure Pipelines: OSS Scanning with WhiteSource Bolt
+ - [Challenge 8](./Student/challenge08.md) - Security
     - Enable security advisories, dependabot alerts
     - Look at code scanning actions in the marketplace (SonarCloud Scan)
     - Reference anything GH has on the roadmap
- - [Challenge 9](./Student/challenge09.md) - GitHub Packages
-    - Needs to be simple and straightfoward
 
 ## Prerequisites
 - Your own Azure subscription with Owner access
