@@ -30,13 +30,13 @@ This hack will help you learn:
     - Create a workflow to build and test and package
  - [Challenge 5](./Student/challenge05.md) - Continuous Delivery
    - Add steps to deploy to the Azure app service
-   - Maybe have them do this inside of VS Code 
+   - NO RELEASE GATES to do phase deployments to test and prod
  - [Challenge 6](./Student/challenge06.md) - Branching & Policies
     - Talk about Branch protection rules https://docs.github.com/en/github/administering-a-repository/about-protected-branches
     - Implement feature branches to push a change 
     - Use pull request to merge to main
     - Choice: use feature branch + master or dev branch (to support phased deployment) 
- - [Challenge 7](./Student/challenge07.md) - Azure Monitoring: Application Insights
+ - [Challenge 7](./Student/challenge07.md) - Monitoring: Application Insights
     - Create and add app insights to project (copy shawn's steps)
  - [Challenge 8](./Student/challenge08.md) - Azure Pipelines: OSS Scanning with WhiteSource Bolt
     - Enable security advisories, dependabot alerts
