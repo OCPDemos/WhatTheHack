@@ -12,11 +12,11 @@ Historically, version control has been the first component that teams implement 
 
 Now that we have a basic understanding of version control and Git, lets get some code checked into source control. DevOps best practices can apply to any programming language, so for today we have provided you a simple .NET Core web application to use.
 
-- Begin by cloning the GitHub repository you created in the [first challenge](challenge01.md) to your local computer ([hint](https://help.github.com/en/articles/cloning-a-repository)).
+1. Begin by cloning the GitHub repository you created in the [first challenge](challenge01.md) to your local computer ([hint](https://help.github.com/en/articles/cloning-a-repository)).
 
-- Next, download the code for the application [here](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/microsoft/WhatTheHack/tree/master/027-DevOpsWithGitHub/Student/Resources/Code). Unzip the download and copy the contents into the root of the repository you just cloned.
+2. Next, download the code for the application [here](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/microsoft/WhatTheHack/tree/master/027-DevOpsWithGitHub/Student/Resources/Code). Unzip the download and copy the contents into the root of the repository you just cloned.
 
-- Finally, commit the files to your GitHub repository using your preferred Git client.
+3. Finally, commit the files to your GitHub repository using your preferred Git client.
 
 ### Success Criteria
 

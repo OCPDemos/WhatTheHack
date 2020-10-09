@@ -16,11 +16,11 @@ In addition to these manual processes, GitHub also provides automated tools for 
 
 In this challenge, you will improve the security of your repository using some of GitHub's built-in tools. 
 
-- Find the repository's Security policy. If there is an existing policy, make an edit and merge your change back into the main branch. Otherwise, go ahead and create a policy using the template provided. GitHub Security policies are Markdown documents that indicate the preferred way to report security vulnerabilities for the repository. 
+1. Find the repository's Security policy. If there is an existing policy, make an edit and merge your change back into the main branch. Otherwise, go ahead and create a policy using the template provided. GitHub Security policies are Markdown documents that indicate the preferred way to report security vulnerabilities for the repository. 
 
-- Enable Dependabot alerts for the repository. Dependabot is an automated tool that creates a pull request when any dependencies in the code base has a known vulnerability. 
+2. Enable Dependabot alerts for the repository. Dependabot is an automated tool that creates a pull request when any dependencies in the code base has a known vulnerability. 
 
-- (NOTE: Skip this step while code scanning is in Beta.) Finally, set up and run a Code scanning workflow for the repository using GitHub's 'CodeQL Analysis.' This workflow can run either on each pull request or on a schedule, and it checks your code for common vulnerabilities or errors. 
+3. (NOTE: Skip this step while code scanning is in Beta.) Finally, set up and run a Code scanning workflow for the repository using GitHub's 'CodeQL Analysis.' This workflow can run either on each pull request or on a schedule, and it checks your code for common vulnerabilities or errors. 
 
 ## Success Criteria
 
