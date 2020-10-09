@@ -32,6 +32,8 @@ In this challenge, you will practice this flow. Additionally, GitHub offers a fe
     - A code owner must approve the changes
     - A CI workflow is run against the feature branch ensuring the application passes a build and test
 
+- A completed pull request merges with the protected branch and is automatically deployed to the dev environment.
+
 ### Learning Resources
 
 - General information about protected branches can be found [here](https://docs.github.com/en/github/administering-a-repository/about-protected-branches), with more configuration specifics [here](https://docs.github.com/en/github/administering-a-repository/configuring-protected-branches).
