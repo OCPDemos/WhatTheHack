@@ -29,8 +29,8 @@ In this challenge, you will practice this flow. Additionally, GitHub offers a fe
 - Changes to the application (i.e.,`/Application/aspnet-core-dotnet-core/Views/Home/Index.cshtml`) are committed to a feature branch.
 
 - Before a pull request is completed:
-    - A code owner must approve the changes
-    - A CI workflow is run against the feature branch ensuring the application passes a build and test
+    - A code owner must approve the changes ([hint](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/about-code-owners))
+    - A CI workflow is run against the feature branch ensuring the application passes a build and test ([hint](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/enabling-required-status-checks))
 
 - A completed pull request merges with the protected branch and is automatically deployed to the dev environment.
 
