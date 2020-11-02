@@ -47,7 +47,8 @@ You should see all three environments in Azure.
 
 ### Success Criteria
 
-- Your workflows completes without any errors and you should see all three environments in Azure. 
+- Your workflows completes without any errors.
+- Your resource group contains 6 resources: 3 App Services, 1 Application Insights, 1 App Service plan and 1 Container registry. 
 
 ### Learning Resources
 
