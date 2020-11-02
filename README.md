@@ -47,6 +47,7 @@ Here is the current list of What The Hack hackathons available in this repositor
 
 ## Operations
 - [Azure Monitoring](/007-AzureMonitoring/README.md)
+- [DevOps with GitHub](/027-DevOpsWithGitHub/readme.md)
 - [Azure DevOps](/010-AzureDevOps/readme.md)
 - [Open Source DevOps](/014-OSSDevOps/readme.md)
 - [MasteringLinux](/020-MasteringLinux/README.md)
