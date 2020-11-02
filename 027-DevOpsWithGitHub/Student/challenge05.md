@@ -1,6 +1,7 @@
-# What the Hack: DevOps with GitHub 
+# What The Hack: DevOps with GitHub 
 
 ## Challenge 5 – Continuous Delivery (CD)
+
 [< Previous](challenge04.md) - [Home](../readme.md) - [Next >](challenge06.md)
 
 ### Introduction

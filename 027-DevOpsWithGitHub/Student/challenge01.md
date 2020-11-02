@@ -1,6 +1,7 @@
-# What the Hack: DevOps with GitHub
+# What The Hack: DevOps with GitHub
 
 ## Challenge 1 - Track your work with GitHub project boards
+
 [< Previous](challenge00.md) - [Home](../readme.md) - [Next >](challenge02.md)
 
 ### Introduction

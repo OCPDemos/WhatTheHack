@@ -1,6 +1,7 @@
-# What the Hack: DevOps with GitHub 
+# What The Hack: DevOps with GitHub 
 
 ## Challenge 3 - Infrastructure as Code (IaC)
+
 [< Previous](challenge02.md) - [Home](../readme.md) - [Next >](challenge04.md)
 
 ### Introduction

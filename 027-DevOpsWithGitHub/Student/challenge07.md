@@ -1,6 +1,7 @@
-# What the Hack: DevOps with GitHub 
+# What The Hack: DevOps with GitHub 
 
 ## Challenge 7 – Monitoring: Application Insights
+
 [< Previous](challenge06.md) - [Home](../readme.md) - [Next >](challenge08.md)
 
 ### Introduction
