@@ -21,17 +21,19 @@ Review the following introduction to GitHub project boards: [GitHub project boar
 
 1. Ensure GitHub issues are enabled for your repo. This will allow you to create issues and put them on the project board. ([hint](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/disabling-issues))
 
-2. Create a project board using the "automated kanban" template. Learn more about automation with project boards [here](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/configuring-automation-for-project-boards).
+2. Add collaborators from your team to your repo. [(hint)](https://docs.github.com/en/free-pro-team@latest/github/setting-up-and-managing-your-github-user-account/inviting-collaborators-to-a-personal-repository)
 
-3. Create an issue for this challenge and each of the remaining challenges (i.e., create 9 issues). When creating each issue, make sure to:
+3. Create a project board using the "automated kanban" template. Learn more about automation with project boards [here](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/configuring-automation-for-project-boards).
+
+4. Create an issue for this challenge and each of the remaining challenges (i.e., create 9 issues). When creating each issue, make sure to:
     - Assign an owner for each issue. For example, assign the `challenge 1` work item to another member of your team, have them assign their `challenge 1` work item to you.
     - Associate each issue with the project board you just created ([hint](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/adding-issues-and-pull-requests-to-a-project-board#adding-issues-and-pull-requests-to-a-project-board-from-the-sidebar))
 
-4. Review the project board and ensure your issues appear.
+5. Review the project board and ensure your issues appear.
 
-5. Ask your team member to close the `challenge 1` issue you assigned to them. Review your project board to see if the issue moved to the 'Done' column automatically. 
+6. Ask your team member to close the `challenge 1` issue you assigned to them. Review your project board to see if the issue moved to the 'Done' column automatically. 
 
-6. After you complete each of the following challenges, be sure to close each associated issue. 
+7. After you complete each of the following challenges, be sure to close each associated issue. 
 
 ### Success Criteria
 
