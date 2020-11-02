@@ -31,17 +31,17 @@ First, we are going to deploy the dev environment:
 
 When your workflow completes successfully, go to the Azure portal to see the environment. If everything worked, create the test environment:
 
-4. Copy your `dev` workflow file and use it to create a new workflow file for `test` (`deployTest.yml`)
-    - Be sure to update the `paths` in your workflow file (i.e., `.github/workflows/deployTest.yml`)
+4. Update the webAppName template parameter (line #6) to `<prefix>devops-test`. Important: commit and push to GitHub before proceeding!
 
-5. Update the webAppName template parameter (line #6) to `<prefix>devops-test`.
+5. Copy your `dev` workflow file and use it to create a new workflow file for `test` (`deployTest.yml`)
+    - Be sure to update the `paths` in your workflow file (i.e., `.github/workflows/deployTest.yml`)
 
 When your workflow completes successfully, go to the Azure portal to see the `test` environment. If everything worked, create the `prod` environment:
 
-6. Copy your `test` workflow file and use it to create a new workflow file for `prod` (`deployProd.yml`)
-    - Be sure to update the `paths` in your workflow file (i.e., `.github/workflows/deployProd.yml`)
+6. Update the webAppName template parameter (line #6) to `<prefix>devops-prod`. Important: commit and push to GitHub before proceeding!
 
-7. Update the webAppName template parameter (line #6) to `<prefix>devops-prod`.
+7. Copy your `test` workflow file and use it to create a new workflow file for `prod` (`deployProd.yml`)
+    - Be sure to update the `paths` in your workflow file (i.e., `.github/workflows/deployProd.yml`)
 
 You should see all three environments in Azure.
 
@@ -58,9 +58,9 @@ You should see all three environments in Azure.
 
 ### Advanced Challenges (optional)
 
-1. In this challenge, we edited the ARM template for each environment (`dev`, `test`, `prod`) but there are ways of [overriding template parameters](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-cli#parameters) when you pass the ARM template to the Azure CLI.
+1. In this challenge, we edited the ARM template for each environment (`dev`, `test`, `prod`) but there are ways of [overriding template parameters](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-cli#parameters).
 
-    - Create a fourth environment, called `staging`, by overriding the template parameters in the Azure CLI action. ([hint](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-cli#parameters))
+    - Create a fourth environment, called `staging`, by overriding the template parameters. ([hint](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-cli#parameters))
     - When you have successfully created the `staging` environment, you can delete it as it will not be used in the upcoming challenges. 
 
 2. In this challenge, we setup three separate workflow files to handle `dev`, `test` and `prod`, however, this could be done with a single workflow with overriding template parameters and GitHub secrets. 
