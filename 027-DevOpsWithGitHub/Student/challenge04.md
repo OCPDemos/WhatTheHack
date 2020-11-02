@@ -20,6 +20,7 @@ In this challenge, you will build and test the .NET Core application, build a co
 
 1. Create a new `.NET Core` workflow from the GitHub Actions marketplace ([hint](https://github.com/actions/starter-workflows/blob/dacfd0a22a5a696b74a41f0b49c98ff41ef88427/ci/dotnet-core.yml))
 2. Configure path filters to *only* trigger this workflow for changes in the `/Application` folder
+3. Configure the workflow to trigger on pushes and pull requests
     
 3. Review and update the predefined steps used to build the .NET Core application (note: for each step below, you may need to update each command to pass the path to the  `.csproj` as an argument):
    - `restore` - will get all the dependencies. Update with an [argument](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-build#arguments) to the application csproj file: `./Application/aspnet-core-dotnet-core/aspnet-core-dotnet-core.csproj`
