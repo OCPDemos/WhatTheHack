@@ -31,7 +31,7 @@ Review the following introduction to GitHub project boards: [GitHub project boar
 
 5. Review the project board and ensure your issues automatically appear under the "To do" column.
 
-6. Drag the `Challenge 1` card from the "To do" column to "In progress."
+6. Since you are currently working on Challenge 1, drag the `Challenge 1` card from the "To do" column to "In progress."
 
 7. Ask your team member to close the `challenge 1` issue you assigned to them. Review your project board to see if the issue moved to the 'Done' column automatically. 
 
