@@ -25,9 +25,9 @@ First, we are going to deploy the dev environment:
 2. Update the ARM template, replacing the `<prefix>` part with a unique lowercase 5 letter name. The resulting name needs to be globally unique to correctly provision resources.
 
 3. Create a GitHub workflow (`deployDev.yml`) that accomplishes the following ([hint](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-github-actions)):
-    - Only runs when changes are made to the workflow file itself *or* the ARM template in your repo ([hint](https://docs.github.com/en/free-pro-team@latest/actions/reference/workflow-syntax-for-github-actions#onpushpull_requestpaths))
+    - Only runs when changes are made to the workflow file itself ([hint](https://docs.github.com/en/free-pro-team@latest/actions/reference/workflow-syntax-for-github-actions#onpushpull_requestpaths))
     - Uses a service principal to authenticate to Azure
-    - Uses the "Azure CLI" action to call your ARM template in your repo
+    - Uses the "Deploy Azure Resource Manager (ARM) Template" action to call your ARM template in your repo
 
 When your workflow completes successfully, go to the Azure portal to see the environment. If everything worked, create the test environment:
 
