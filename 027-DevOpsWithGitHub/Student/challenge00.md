@@ -12,7 +12,7 @@ DevOps is a broad concept that encompasses people, processes, and tools. The too
 
 1. Begin by creating a GitHub account that you can use for this hack. You may use an existing account if you have one already.
 
-1. Next, create an Azure subscription that you can use for this hack. If you already have a subscription, you may use it. Alternatively, you can get a free trial subscription [here]().
+1. Next, create an Azure subscription that you can use for this hack. If you already have a subscription, you may use it. Alternatively, you can get a free trial subscription [here](https://azure.microsoft.com/en-us/free/).
 
 1. Log in to the [Azure Portal](http://portal.azure.com) to confirm that you have an active subscription that you can deploy resources to. 
 
