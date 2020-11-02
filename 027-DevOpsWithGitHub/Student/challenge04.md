@@ -19,19 +19,20 @@ Review the following articles:
 In this challenge, you will build and test the .NET Core application, build a container image and push it to Azure Container Registry (ACR). 
 
 1. Create a new `.NET Core` workflow from the GitHub Actions marketplace ([hint](https://github.com/actions/starter-workflows/blob/dacfd0a22a5a696b74a41f0b49c98ff41ef88427/ci/dotnet-core.yml))
-2. Configure path filters to *only* trigger this workflow for changes in the `/Application` folder
-3. Configure the workflow to trigger on pushes and pull requests
+2. In your workflow, under the "Setup .NET Core" step, change the .NET version to 2.2
+3. Configure path filters to *only* trigger this workflow for changes in the `/Application` folder
+4. Configure the workflow to trigger on pushes and pull requests
     
-3. Review and update the predefined steps used to build the .NET Core application (note: for each step below, you may need to update each command to pass the path to the  `.csproj` as an argument):
+5. Review and update the predefined steps used to build the .NET Core application (note: for each step below, you may need to update each command to pass the path to the  `.csproj` as an argument):
    - `restore` - will get all the dependencies. Update with an [argument](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-build#arguments) to the application csproj file: `./Application/aspnet-core-dotnet-core/aspnet-core-dotnet-core.csproj`
    - `build` - will actually compile our code. Update with an [argument](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-build#arguments) to the application csproj file: `./Application/aspnet-core-dotnet-core/aspnet-core-dotnet-core.csproj`
    - `test` - will execute all our unit tests. Update with an [argument](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-build#arguments) to the unit test csproj file: `./Application/aspnet-core-dotnet-core.UnitTests/aspnet-core-dotnet-core.UnitTests.csproj` 
 
-4. Test the workflow by making a small change to the application code (i.e., add a comment). Commit, push and ensure the workflow completes successfully.
+6. Test the workflow by making a small change to the application code (i.e., add a comment). Commit, push and ensure the workflow completes successfully.
 
 At this point, any changes pushed to the `/Application` folder automatically triggers the workflow...and that is Continuous Integration! Now, we need to extend our workflow with steps to build a container image and push it to the registry.
 
-5. Add a GitHub Action to your workflow to build and push the container image to the registry ([hint](https://github.com/marketplace/actions/build-and-push-docker-images))
+7. Add a GitHub Action to your workflow to build and push the container image to the registry ([hint](https://github.com/marketplace/actions/build-and-push-docker-images))
     - To authenticate to ACR, you may need to get the username and password to your ACR instance and save as GitHub secrets ([hint](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-authentication#admin-account))
     - Key parameters to configure for Docker:
         - `dockerfile` - The path to the Dockerfile - a critical parameter. You will need to point to the Dockerfile in the `/Application` folder.
@@ -41,7 +42,7 @@ At this point, any changes pushed to the `/Application` folder automatically tri
         - `repository` - The repository (or 'folder') to target in the registry. Set this to "`imageName`.azurecr.io" - replacing `imageName` with the `<prefix>devopsimage` value in your ARM template file (line #31).
         - `tags` - This needs to be a unique value each time, as this is used to version the images in the repository. GitHub makes [environment variables](https://docs.github.com/en/free-pro-team@latest/actions/reference/context-and-expression-syntax-for-github-actions#github-context) available that helps with this. Set `tags` to ${{ GITHUB_RUN_NUMBER }}.
 
-6. Test the workflow by making a small change to the application code (i.e., add a comment). Commit, push, monitor the workflow and verify that a new container image is built, uniquely tagged and pushed to ACR after each successful workflow run.
+8. Test the workflow by making a small change to the application code (i.e., add a comment). Commit, push, monitor the workflow and verify that a new container image is built, uniquely tagged and pushed to ACR after each successful workflow run.
 
 ### Success Criteria
 
