@@ -64,7 +64,7 @@ You should see all three environments in Azure.
     - Create a fourth environment, called `staging`, by overriding the template parameters. ([hint](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-cli#parameters))
     - When you have successfully created the `staging` environment, you can delete it as it will not be used in the upcoming challenges. 
 
-2. In this challenge, we setup three separate workflow files to handle `dev`, `test` and `prod`, however, this could be done with a single workflow with overriding template parameters and GitHub secrets. 
+2. In this challenge, we setup three separate workflow files to handle `dev`, `test` and `prod`, however, this could be done with a single workflow with the target environment stored as a secret instead of hardcoding it in the workflow file.
     - Create a GitHub secret (called `targetEnv`) and set the *value* to `staging2` ([hint](https://docs.github.com/en/free-pro-team@latest/actions/reference/encrypted-secrets))
     - In your workflow, read the GitHub secret ([hint](https://docs.github.com/en/free-pro-team@latest/actions/reference/encrypted-secrets#using-encrypted-secrets-in-a-workflow))
 and pass the value as a overriding template parameter (as described in Advanced Challenge #1)
