@@ -22,7 +22,7 @@ First, we are going to deploy the dev environment:
 
 1. Review the [ARM template](./Code/ARM-Templates/container-webapp-template.json). Notice how it defines a number of parameters and uses them to create the Resource Group, App Service Plan, Web App, Application Insights, and Azure Container Registry.
 
-2. Update the ARM template, replacing the `<prefix>` part with a unique lowercase 5 letter name.
+2. Update the ARM template, replacing the `<prefix>` part with a unique lowercase 5 letter name. The resulting name needs to be globally unique to correctly provision resources.
 
 3. Create a GitHub workflow (`deployDev.yml`) that accomplishes the following ([hint](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-github-actions)):
     - Only runs when changes are made to the workflow file itself *or* the ARM template in your repo ([hint](https://docs.github.com/en/free-pro-team@latest/actions/reference/workflow-syntax-for-github-actions#onpushpull_requestpaths))

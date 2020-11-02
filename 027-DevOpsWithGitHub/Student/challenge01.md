@@ -25,7 +25,7 @@ Review the following introduction to GitHub project boards: [GitHub project boar
 
 3. Create a project board using the "automated kanban" template. Learn more about automation with project boards [here](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/configuring-automation-for-project-boards).
 
-4. Create an issue for this challenge and each of the remaining challenges (i.e., create 9 issues). When creating each issue, make sure to:
+4. Create an issue for this challenge and each of the remaining challenges (i.e., create 8 issues total - skip challenge 0). When creating each issue, make sure to:
     - Assign an owner for each issue. Assign the `challenge 1` work item to another member of your team, have them assign their `challenge 1` work item to you. Assign all remaining challenges to yourself.
     - Associate each issue with the project board you just created ([hint](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/adding-issues-and-pull-requests-to-a-project-board#adding-issues-and-pull-requests-to-a-project-board-from-the-sidebar))
 
@@ -43,6 +43,10 @@ Review the following introduction to GitHub project boards: [GitHub project boar
 - You have a project board using the automation kanban template with 9 issues (8 open, 1 closed by a team member)
 - New issues automatically appear under the "To do" column
 - Closed issues automatically appear under the "Done" column
+
+### Learning Resources
+
+- [Creating a project board in GitHub](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/creating-a-project-board)
 
 ### Advanced Challenges (optional)
 
