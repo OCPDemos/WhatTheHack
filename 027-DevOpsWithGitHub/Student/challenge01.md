@@ -26,7 +26,7 @@ Review the following introduction to GitHub project boards: [GitHub project boar
 3. Create a project board using the "automated kanban" template. Learn more about automation with project boards [here](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/configuring-automation-for-project-boards).
 
 4. Create an issue for this challenge and each of the remaining challenges (i.e., create 9 issues). When creating each issue, make sure to:
-    - Assign an owner for each issue. For example, assign the `challenge 1` work item to another member of your team, have them assign their `challenge 1` work item to you.
+    - Assign an owner for each issue. Assign the `challenge 1` work item to another member of your team, have them assign their `challenge 1` work item to you. Assign all remaining challenges to yourself.
     - Associate each issue with the project board you just created ([hint](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/adding-issues-and-pull-requests-to-a-project-board#adding-issues-and-pull-requests-to-a-project-board-from-the-sidebar))
 
 5. Review the project board and ensure your issues automatically appear under the "To do" column.
@@ -46,7 +46,7 @@ Review the following introduction to GitHub project boards: [GitHub project boar
 
 ### Advanced Challenges (optional)
 
-1. You can integrate Azure DevOps Boards with GitHub if you need advanced project management features. 
+1. You can integrate Azure Boards with GitHub if you need advanced project management features. 
     -  Follow the steps [here](https://docs.microsoft.com/en-us/azure/devops/boards/github/?view=azure-devops) to integrate Azure Boards with your GitHub repo.
 
 [< Previous](challenge00.md) - [Home](../readme.md) - [Next >](challenge02.md)

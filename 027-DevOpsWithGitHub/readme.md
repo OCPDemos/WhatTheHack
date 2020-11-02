@@ -18,7 +18,7 @@ This hack will help you learn:
  - [Challenge 1](./Student/challenge01.md) - Track your work with GitHub Project Boards
     - Create the project
     - Add issues for each challenge
-    - Optional challenge: integrate Azure DevOps Boards 
+    - Optional challenge: integrate Azure Boards 
  - [Challenge 2](./Student/challenge02.md) - Centralize your code with GitHub Repos
     - Add code to repo
     - Clone to local machine

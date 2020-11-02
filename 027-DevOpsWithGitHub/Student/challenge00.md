@@ -29,6 +29,7 @@ DevOps is a broad concept that encompasses people, processes, and tools. The too
 ### Success Criteria
 
 - You should now be able to login to both GitHub and Azure with valid accounts for each service. 
+- You should have a new repo in GitHub.
 - You should also have installed your preferred git client. 
 - You should have a text editor installed. 
 
