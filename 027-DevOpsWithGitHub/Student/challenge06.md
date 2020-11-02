@@ -1,6 +1,6 @@
 # What The Hack: DevOps with GitHub
 
-# Challenge 6 - Branching and Policies
+## Challenge 6 - Branching and Policies
 
 [< Previous](challenge05.md) - [Home](../readme.md) - [Next >](challenge07.md)
 
