@@ -53,6 +53,7 @@ At this point, any changes pushed to the `/Application` folder automatically tri
 - [Introduction to GitHub Actions](https://docs.github.com/en/free-pro-team@latest/actions/learn-github-actions/introduction-to-github-actions)
 - [Understanding workflow path filters](https://docs.github.com/en/free-pro-team@latest/actions/reference/workflow-syntax-for-github-actions#onpushpull_requestpaths)
 - [dotnet commands](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet#dotnet-commands)
+- [GitHub Actions for Azure](https://github.com/Azure/actions)
 
 ### Tips
 

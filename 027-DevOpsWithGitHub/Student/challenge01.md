@@ -12,7 +12,7 @@ Agile project management is a key component of building a modern DevOps culture 
 3. [What is Kanban](https://docs.microsoft.com/en-us/azure/devops/learn/agile/what-is-kanban)
 4. [What is Agile Development?](https://docs.microsoft.com/en-us/azure/devops/learn/agile/what-is-agile-development)
 
-To help you with Agile project management, there is GitHub project boards. With GitHub project boards, you can quickly and easily start tracking your backlog, tasks, issues/bugs and features associated with your project.  
+To help you with Agile project management, there is [GitHub project boards](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/about-project-boards). With GitHub project boards, you can quickly and easily start tracking your backlog, tasks, issues/bugs and features associated with your project.  
 
 Review the following introduction to GitHub project boards: [GitHub project boards](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/about-project-boards).
 
