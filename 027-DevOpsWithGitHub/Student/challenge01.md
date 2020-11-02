@@ -29,7 +29,7 @@ Review the following introduction to GitHub project boards: [GitHub project boar
     - Assign an owner for each issue. For example, assign the `challenge 1` work item to another member of your team, have them assign their `challenge 1` work item to you.
     - Associate each issue with the project board you just created ([hint](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/adding-issues-and-pull-requests-to-a-project-board#adding-issues-and-pull-requests-to-a-project-board-from-the-sidebar))
 
-5. Review the project board and ensure your issues appear.
+5. Review the project board and ensure your issues automatically appear under the "To do" column.
 
 6. Ask your team member to close the `challenge 1` issue you assigned to them. Review your project board to see if the issue moved to the 'Done' column automatically. 
 
