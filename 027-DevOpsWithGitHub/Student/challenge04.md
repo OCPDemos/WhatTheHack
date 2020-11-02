@@ -8,7 +8,7 @@
 
 With our existing repository and newly-created Azure App Service, we have laid the foundation for our application. Now, we must connect our source code and its destination. The first step in this journey is called Continuous Integration (CI). 
 
-Continous Integration is the process of merging local code changes into source control and may include steps to automatically build and/or test the code. When done effectively, Continuous Integration allows developers to rapidly iterate and collaborate, and it helps ensure that newly added code does not break the current application. 
+Continous integration is the process of merging local code changes into source control and may include steps to automatically build and/or test the code. When done effectively, Continuous Integration allows developers to rapidly iterate and collaborate, and it helps ensure that newly added code does not break the current application. 
 
 Review the following articles:
 - [About continuous integration](https://docs.github.com/en/actions/building-and-testing-code-with-continuous-integration/about-continuous-integration)
@@ -19,7 +19,7 @@ Review the following articles:
 In this challenge, you will build and test the .NET Core application, build a container image and push it to Azure Container Registry (ACR). 
 
 1. Create a new `.NET Core` workflow from the GitHub Actions marketplace ([hint](https://github.com/actions/starter-workflows/blob/dacfd0a22a5a696b74a41f0b49c98ff41ef88427/ci/dotnet-core.yml))
-2. In your workflow, under the "Setup .NET Core" step, change the .NET version to 2.2
+2. In your workflow, under the "Setup .NET Core" step, change the .NET version to `2.2` to match the version defined by the application.
 3. Configure path filters to *only* trigger this workflow for changes in the `/Application` folder
 4. Configure the workflow to trigger on pushes and pull requests
     
