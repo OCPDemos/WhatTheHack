@@ -57,3 +57,4 @@ This hack will help you learn:
 ## Contributors
 - Kevin M. Gates
 - Will Fox
+- Julia Nathan
