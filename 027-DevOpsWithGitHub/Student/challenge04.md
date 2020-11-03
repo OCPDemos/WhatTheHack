@@ -20,7 +20,7 @@ In this challenge, you will build and test the .NET Core application, build a co
 
 1. Create a new `.NET Core` workflow from the GitHub Actions marketplace. In your repo, click on Actions in the top menu > New Workflow (button) > scroll down to the 'Continuous integration workflows' section and setup the '.NET Core' action.
 
-2. Review the layout of the workflow. There is a single job with multiple steps (restore, build, test). Learn more about the structure of a workflow [here](https://docs.github.com/en/free-pro-team@latest/actions/learn-github-actions/introduction-to-github-actions).
+2. Review the layout of the workflow. There is a single job (named 'build') with multiple steps (restore, build, test). Important: learn more about the structure of a workflow [here](https://docs.github.com/en/free-pro-team@latest/actions/learn-github-actions/introduction-to-github-actions).
 
 3. In your workflow, under the "Setup .NET Core" step, change the .NET version to `2.2` to match the version defined by the application.
 
@@ -28,20 +28,19 @@ In this challenge, you will build and test the .NET Core application, build a co
 
 5. Configure the workflow to trigger on pushes *and* pull requests.
 
-6. Review and update the predefined steps used to build the .NET Core application (note: for each step below, you may need to update each command to pass the path to the  `.csproj` as an argument):
+6. Update the predefined steps used to build the .NET Core application (note: for each step below, you will need to update each command to pass the relative path to the  `.csproj` as an argument):
    - `restore` - will get all the dependencies. Update with an [argument](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-build#arguments) to the application csproj file: `./Application/aspnet-core-dotnet-core/aspnet-core-dotnet-core.csproj`
-   - `build` - will actually compile our code. Update with an [argument](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-build#arguments) to the application csproj file: `./Application/aspnet-core-dotnet-core/aspnet-core-dotnet-core.csproj`
-   - `test` - will execute all our unit tests. Update with an [argument](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-build#arguments) to the unit test csproj file: `./Application/aspnet-core-dotnet-core.UnitTests/aspnet-core-dotnet-core.UnitTests.csproj` 
+   - `build` - will actually compile our code. Update with an argument to the application csproj file: `./Application/aspnet-core-dotnet-core/aspnet-core-dotnet-core.csproj`
+   - `test` - will execute all our unit tests. Update with an argument to the unit test csproj file: `./Application/aspnet-core-dotnet-core.UnitTests/aspnet-core-dotnet-core.UnitTests.csproj` 
 
-7. Test the workflow by making a small change to the application code (i.e., add a comment). commit, push and ensure the workflow completes successfully.
+7. Test the workflow by making a small change to the application code (i.e., add a comment). Commit, push and ensure the workflow completes successfully.
 
 At this point, any changes pushed to the `/Application` folder automatically triggers the workflow...and that is Continuous Integration! Now, we need to extend our workflow with steps to build a container image and push it to the registry.
-
 
 8. At the top of your workflow file, create 4 environment variables [(hint)](https://docs.github.com/en/free-pro-team@latest/actions/reference/workflow-syntax-for-github-actions#env):
 
     - `registryName` - the full server address of your ACR instance. Set this to "`registryName`.azurecr.io" - replacing `registryName` with the `<prefix>devopsreg` value in your ARM template file (line #26). 
-    - `repositoryName` - The repository to target in the registry. Set this to "`imageName`.azurecr.io" - replacing `imageName` with the `<prefix>devopsimage` value in your ARM template file (line #31).
+    - `repositoryName` - The repository to target in the registry. Set this to "`wth/dotnetcoreapp`".
     - `dockerfilePath` - The path to the Dockerfile - a critical parameter. You will need to point to the folder: `Application/aspnet-core-dotnet-core`.
     - `tag` - This needs to be a unique value each time, as this is used to version the images in the repository. GitHub makes [environment variables](https://docs.github.com/en/free-pro-team@latest/actions/reference/context-and-expression-syntax-for-github-actions#github-context) available that helps with this. Set `tag` to ${{ GITHUB_RUN_NUMBER }}.
 

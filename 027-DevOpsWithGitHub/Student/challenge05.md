@@ -14,6 +14,8 @@ In DevOps after we automate our build process, we want to automate our release p
 
 In this challenge, we will use GitHub Actions to deploy our container image to the dev environment. 
 
+OPTIONAL: Use your code editor (VS Code) to update your workflow file locally on your machine. Remember to commit and push any changes.
+
 Extend the workflow you created in Challenge #4 to:
 
 1. Configure your `dev` environment to pull the latest container image from ACR. 
