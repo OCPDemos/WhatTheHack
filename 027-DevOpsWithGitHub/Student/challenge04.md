@@ -41,8 +41,8 @@ At this point, any changes pushed to the `/Application` folder automatically tri
 
     - `registryName` - the full server address of your ACR instance. Set this to "`registryName`.azurecr.io" - replacing `registryName` with the `<prefix>devopsreg` value in your ARM template file (line #26). 
     - `repositoryName` - The repository to target in the registry. Set this to "`wth/dotnetcoreapp`".
-    - `dockerfilePath` - The path to the Dockerfile - a critical parameter. You will need to point to the folder: `Application/aspnet-core-dotnet-core`.
-    - `tag` - This needs to be a unique value each time, as this is used to version the images in the repository. GitHub makes [environment variables](https://docs.github.com/en/free-pro-team@latest/actions/reference/context-and-expression-syntax-for-github-actions#github-context) available that helps with this. Set `tag` to `$ {{ github.run_number }}`.
+    - `dockerFolderPath` - The path to the folder that contains the Dockerfile - a critical parameter. You will need to point to the folder: `Application/aspnet-core-dotnet-core`.
+    - `tag` - This needs to be a unique value each time, as this is used to version the images in the repository. GitHub makes [environment variables](https://docs.github.com/en/free-pro-team@latest/actions/reference/context-and-expression-syntax-for-github-actions#github-context) available that helps with this. Set `tag` to `${{github.run_number}}`.
 
 9. Go to the Azure Portal and get the (1) username and (2) password and (3) login server to your ACR instance and save as GitHub secrets (ACR_USERNAME, ACR_PASSWORD, ACR_LOGIN_SERVER) ([hint](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-authentication#admin-account))
 
@@ -50,9 +50,9 @@ At this point, any changes pushed to the `/Application` folder automatically tri
 
 11. Make sure the first step in your second job includes `- uses: actions/checkout@v2`
 
-12. To authenticate to the registry, add the "Azure Container Registry Login" action as the first *step* in your second *job* and set the username, password and login server to the secrets you just created.
+12. To authenticate to the registry, add the "Azure Container Registry Login" action as the next step and set the username, password and login server to the secrets you just created.
 
-13. To build your image, add a step named `Docker build` with the following as the `run` command: `docker build -t $registryName/$repositoryName:$tag --build-arg build_version=$tag $dockerfilePath`
+13. To build your image, add a step named `Docker build` with the following as the `run` command: `docker build -t $registryName/$repositoryName:$tag --build-arg build_version=$tag $dockerFolderPath`
 
 14. To push your image to ACR, add a step named `Docker push` with the following as the `run` command: `docker push $registryName/$repositoryName:$tag`
 
