@@ -42,7 +42,7 @@ At this point, any changes pushed to the `/Application` folder automatically tri
     - `registryName` - the full server address of your ACR instance. Set this to "`registryName`.azurecr.io" - replacing `registryName` with the `<prefix>devopsreg` value in your ARM template file (line #26). 
     - `repositoryName` - The repository to target in the registry. Set this to "`wth/dotnetcoreapp`".
     - `dockerfilePath` - The path to the Dockerfile - a critical parameter. You will need to point to the folder: `Application/aspnet-core-dotnet-core`.
-    - `tag` - This needs to be a unique value each time, as this is used to version the images in the repository. GitHub makes [environment variables](https://docs.github.com/en/free-pro-team@latest/actions/reference/context-and-expression-syntax-for-github-actions#github-context) available that helps with this. Set `tag` to "${{ github.run_number }}".
+    - `tag` - This needs to be a unique value each time, as this is used to version the images in the repository. GitHub makes [environment variables](https://docs.github.com/en/free-pro-team@latest/actions/reference/context-and-expression-syntax-for-github-actions#github-context) available that helps with this. Set `tag` to `$ {{ github.run_number }}`.
 
 9. Go to the Azure Portal and get the (1) username and (2) password and (3) login server to your ACR instance and save as GitHub secrets (ACR_USERNAME, ACR_PASSWORD, ACR_LOGIN_SERVER) ([hint](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-authentication#admin-account))
 
