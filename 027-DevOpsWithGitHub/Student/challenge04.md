@@ -48,15 +48,17 @@ At this point, any changes pushed to the `/Application` folder automatically tri
 
 10. Add a second **job** to your existing .NET Core workflow. [(hint)](https://docs.github.com/en/free-pro-team@latest/actions/learn-github-actions/introduction-to-github-actions)
 
-11. To authenticate to our registry, add the "Azure Container Registry Login" action as the first *step* in your second *job* and set the username, password and login server to the secrets you just created.
+11. Make sure the first step in your second job includes `- uses: actions/checkout@v2`
 
-12. To build your image, add a step named `Docker build` with the following as the `run` command: `docker build -t $registryName/$repositoryName:$tag --build-arg build_version=$tag $dockerfilePath`
+12. To authenticate to our registry, add the "Azure Container Registry Login" action as the first *step* in your second *job* and set the username, password and login server to the secrets you just created.
 
-13. To push your image to ACR, add a step named `Docker push` with the following as the `run` command: `docker push $registryName/$repositoryName:$tag`
+13. To build your image, add a step named `Docker build` with the following as the `run` command: `docker build -t $registryName/$repositoryName:$tag --build-arg build_version=$tag $dockerfilePath`
 
-14. Save and commit your changes to the repo.
+14. To push your image to ACR, add a step named `Docker push` with the following as the `run` command: `docker push $registryName/$repositoryName:$tag`
 
-15. Test the workflow by making a small change to the application code (i.e., add a comment). Commit, push, monitor the workflow and verify that a new container image is built, uniquely tagged and pushed to ACR after each successful workflow run.
+15. Save and commit your changes to the repo.
+
+16. Test the workflow by making a small change to the application code (i.e., add a comment). Commit, push, monitor the workflow and verify that a new container image is built, uniquely tagged and pushed to ACR after each successful workflow run.
 
 ### Success Criteria
 
