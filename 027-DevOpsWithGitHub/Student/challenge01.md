@@ -19,15 +19,15 @@ Review the following introduction to GitHub project boards: [GitHub project boar
 
 ### Challenge
 
-1. Ensure GitHub issues are enabled for your repo. This will allow you to create issues and put them on the project board. ([hint](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/disabling-issues))
+1. Ensure GitHub issues are enabled for your repo. This will allow you to create issues and put them on the project board. 
 
-2. Add collaborators from your team to your repo. [(hint)](https://docs.github.com/en/free-pro-team@latest/github/setting-up-and-managing-your-github-user-account/inviting-collaborators-to-a-personal-repository)
+2. Add collaborators from your team to your repo. 
 
-3. Create a project board using the "automated kanban" template. Learn more about automation with project boards [here](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/configuring-automation-for-project-boards).
+3. Create a project board using the "automated kanban" template.
 
 4. Create an issue for this challenge and each of the remaining challenges (i.e., create 8 issues total - skip challenge 0). When creating each issue, make sure to:
     - Assign an owner for each issue. Assign the `challenge 1` work item to another member of your team, have them assign their `challenge 1` work item to you. Assign all remaining challenges to yourself.
-    - Associate each issue with the project board you just created ([hint](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/adding-issues-and-pull-requests-to-a-project-board#adding-issues-and-pull-requests-to-a-project-board-from-the-sidebar))
+    - Associate each issue with the project board you just created 
 
 5. Review the project board and ensure your issues automatically appear under the "To do" column.
 
@@ -47,6 +47,10 @@ Review the following introduction to GitHub project boards: [GitHub project boar
 ### Learning Resources
 
 - [Creating a project board in GitHub](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/creating-a-project-board)
+- [Enable GitHub Issues on a repo](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/disabling-issues)
+- [Inviting collaborators to a personal repository](https://docs.github.com/en/free-pro-team@latest/github/setting-up-and-managing-your-github-user-account/inviting-collaborators-to-a-personal-repository)
+- [Learn more about automation with project boards](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/configuring-automation-for-project-boards)
+- [Adding issues to a project board](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/adding-issues-and-pull-requests-to-a-project-board#adding-issues-and-pull-requests-to-a-project-board-from-the-sidebar)
 
 ### Advanced Challenges (optional)
 

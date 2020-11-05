@@ -1,39 +1,66 @@
-# What The Hack: DevOps with GitHub 
+# What The Hack: DevOps with GitHub
 
-## Challenge 5 – Continuous Delivery (CD)
+## Challenge 5 - Build and push Docker image to container registry
 
 [< Previous](challenge04.md) - [Home](../readme.md) - [Next >](challenge06.md)
 
 ### Introduction
 
-In DevOps after we automate our build process, we want to automate our release process, we do this with a technique called Continuous Delivery (CD). Please take a moment to review this brief article talking about why this is important. 
+Now, we need to extend our workflow with steps to build a docker image and push it to Azure Container Registry (ACR). In the NEXT challenge, we will configure the Web App to pull the image from ACR.
 
-- [What is Continuous Delivery?](https://docs.microsoft.com/en-us/azure/devops/learn/what-is-continuous-delivery)
+Containers are a great way to package and deploy applications consistently across environments. If you are new to containers, there are 3 key steps to creating and publishing an image - outlined below. Because this is a What The Hack focused on DevOps and not containers, we've strived to make this challenge as straightforward as possible.
+
+1. `docker login` - you need to login to the container registry that you will push your image to. As you can imagine, you don't want anyone to publish an image in your registry, so it is often setup as a private registry...requiring authentication to push and pull images.
+
+2. `docker build` - you need to call docker.exe (running locally on your machine or on your build server) to create the container image. A *critical* component of this is the `Dockerfile`, which gives instructions to docker.exe on how to build the image, the files to copy, ports to expose and startup commands.
+
+3. `docker push` - once you have created your docker image, you need to store it in the container registry, which is our secured and centralized location to store docker images. Docker supports a push command that copies the docker image to the registry in the proper repository. A repository is a logical way of grouping and versioning docker images.
 
 ### Challenge
 
-In this challenge, we will use GitHub Actions to deploy our container image to the dev environment. 
+In this challenge, you will build and push a docker image to ACR:
 
-OPTIONAL: Use your code editor (VS Code) to update your workflow file locally on your machine. Remember to commit and push any changes.
+1. At the top of your workflow file, create 4 environment variables:
 
-Extend the workflow you created in Challenge #4 to:
+    - `registryName` - the full server address of your ACR instance. Set this to "`registryName`.azurecr.io" - replacing `registryName` with the `<prefix>devopsreg` value in your ARM template file (line #26). 
+    - `repositoryName` - The repository to target in the registry. Set this to "`wth/dotnetcoreapp`".
+    - `dockerFolderPath` - The path to the folder that contains the Dockerfile - a critical parameter. You will need to point to the folder: `Application/aspnet-core-dotnet-core`.
+    - `tag` - This needs to be a unique value each time, as this is used to version the images in the repository. GitHub makes [environment variables](https://docs.github.com/en/free-pro-team@latest/actions/reference/context-and-expression-syntax-for-github-actions#github-context) available that helps with this. Set `tag` to `${{github.run_number}}`.
 
-1. Configure your `dev` environment to pull the latest container image from ACR. 
-   - Login to Azure using your service principal, if needed ([hint](https://docs.microsoft.com/en-us/azure/app-service/deploy-container-github-action?tabs=service-principal#tabpanel_CeZOj-G++Q-3_service-principal))
-   - Use the `Azure/webapps-deploy@v2` [action](https://github.com/Azure/webapps-deploy) to update the Web App to pull the latest image from ACR. Key parameters to configure:
-      - `app-name` (i.e., `<prefix>devops-dev`)
-      - `images` (i.e., `<prefix>devopsreg`.azurecr.io/`<prefix>devopsimage`:`$ {{ github.run_number }}`)
+2. Go to the Azure Portal and get the (1) username and (2) password and (3) login server to your ACR instance and save as GitHub secrets (ACR_USERNAME, ACR_PASSWORD, ACR_LOGIN_SERVER).
 
-2. Make a small change to your application  (i.e.,`/Application/aspnet-core-dotnet-core/Views/Home/Index.cshtml`), commit, push, monitor the workflow and see if the change shows up on the dev instance of the website.
+3. Add a second **job** to your existing .NET Core workflow. 
 
-**NOTE**: Normally, we would have you configure [release gates](https://docs.microsoft.com/en-us/azure/devops/pipelines/release/approvals/?view=azure-devops) next - which would require some type of manual approval/human intervention *before* deploying to test and prod respectively. But, as of 10/7/20, GitHub doesn't offer this natively - although it is on the [GitHub roadmap](https://github.com/github/roadmap/issues/99), due to be available by the end of 2020.
+4. Make sure the first step in your second job includes `- uses: actions/checkout@v2`
+
+5. To authenticate to the registry, add a step named `Docker login` with the following as the `run` command: `docker $registryName -u ACR_USERNAME -p ACR_PASSWORD` - replacing ACR_USERNAME and ACR_PASSWORD with the secrets.
+
+6. To build your image, add a step named `Docker build` with the following as the `run` command: `docker build -t $registryName/$repositoryName:$tag --build-arg build_version=$tag $dockerFolderPath`
+
+7. To push your image to ACR, add a step named `Docker push` with the following as the `run` command: `docker push $registryName/$repositoryName:$tag`
+
+8. Test the workflow by making a small change to the application code (i.e., add a comment). Commit, push, monitor the workflow and verify that a new container image is built, uniquely tagged and pushed to ACR after each successful workflow run.
 
 ### Success Criteria
 
-1. A small change to `/Application/aspnet-core-dotnet-core/Views/Home/Index.cshtml` automatically shows up on the website running in the dev environment (i.e., `<prefix>devops-dev`.azurewebsites.net).
+- A new container image is built, uniquely tagged and pushed to ACR after each successful workflow run.
 
 ### Learning Resources
 
-- [Deploy a custom container to App Service using GitHub Actions](https://docs.microsoft.com/en-us/azure/app-service/deploy-container-github-action?tabs=service-principal#tabpanel_CeZOj-G++Q-3_service-principal)
+- [Environment variables](https://docs.github.com/en/free-pro-team@latest/actions/reference/workflow-syntax-for-github-actions#env)
+- [Introduction to GitHub Actions](https://docs.github.com/en/free-pro-team@latest/actions/learn-github-actions/introduction-to-github-actions)
+- [Understanding workflow path filters](https://docs.github.com/en/free-pro-team@latest/actions/reference/workflow-syntax-for-github-actions#onpushpull_requestpaths)
+- [Authenticate with an Azure container registry](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-authentication#admin-account)
+- [GitHub Actions for Azure](https://github.com/Azure/actions)
+
+### Tips
+
+- If you are having trouble finding a starting point, try clicking over to the 'Actions' tab of your GitHub repository. 
+- Take advantage of the prebuilt workflow templates if you find one that might work! 
+
+### Advanced Challenges (optional)
+
+1. In this challenge, if the workflow fails, an email is set to the repo owner. Sometimes, you may want to log or create a GitHub issue when the workflow fails.
+    - Add a step to your workflow to create a GitHub issue when there is a failure.
 
 [< Previous](challenge04.md) - [Home](../readme.md) - [Next >](challenge06.md)

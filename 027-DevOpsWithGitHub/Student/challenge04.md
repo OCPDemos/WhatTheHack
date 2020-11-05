@@ -16,11 +16,11 @@ Review the following articles:
 
 ### Challenge
 
-In this challenge, you will build and test the .NET Core application, build a container image and push it to Azure Container Registry (ACR). 
+In this challenge, you will build and test the .NET Core application.
 
 1. Create a new `.NET Core` workflow from the GitHub Actions marketplace. In your repo, click on Actions in the top menu > New Workflow (button) > scroll down to the 'Continuous integration workflows' section and setup the '.NET Core' action.
 
-2. Review the layout of the workflow. There is a single job (named 'build') with multiple steps (restore, build, test). Important: learn more about the structure of a workflow [here](https://docs.github.com/en/free-pro-team@latest/actions/learn-github-actions/introduction-to-github-actions).
+2. Review the layout of the workflow. There is a single job (named 'build') with multiple steps (restore, build, test).
 
 3. In your workflow, under the "Setup .NET Core" step, change the .NET version to `2.2` to match the version defined by the application.
 
@@ -29,42 +29,18 @@ In this challenge, you will build and test the .NET Core application, build a co
 5. Configure the workflow to trigger on pushes *and* pull requests.
 
 6. Update the predefined steps used to build the .NET Core application (note: for each step below, you will need to update each command to pass the relative path to the  `.csproj` as an argument):
-   - `restore` - will get all the dependencies. Update with an [argument](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-build#arguments) to the application csproj file: `./Application/aspnet-core-dotnet-core/aspnet-core-dotnet-core.csproj`
-   - `build` - will actually compile our code. Update with an argument to the application csproj file: `./Application/aspnet-core-dotnet-core/aspnet-core-dotnet-core.csproj`
-   - `test` - will execute all our unit tests. Update with an argument to the unit test csproj file: `./Application/aspnet-core-dotnet-core.UnitTests/aspnet-core-dotnet-core.UnitTests.csproj` 
+   - `restore` - will get all the dependencies. Update with an [argument](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-build#arguments) to the application csproj file.
+   - `build` - will actually compile our code. Update with an argument to the application csproj file.
+   - `test` - will execute all our unit tests. Update with an argument to the unit test csproj file. 
 
 7. Test the workflow by making a small change to the application code (i.e., add a comment). Commit, push and ensure the workflow completes successfully.
 
-At this point, any changes pushed to the `/Application` folder automatically triggers the workflow...and that is Continuous Integration! Now, we need to extend our workflow with steps to build a container image and push it to the registry.
-
-8. At the top of your workflow file, create 4 environment variables [(hint)](https://docs.github.com/en/free-pro-team@latest/actions/reference/workflow-syntax-for-github-actions#env):
-
-    - `registryName` - the full server address of your ACR instance. Set this to "`registryName`.azurecr.io" - replacing `registryName` with the `<prefix>devopsreg` value in your ARM template file (line #26). 
-    - `repositoryName` - The repository to target in the registry. Set this to "`wth/dotnetcoreapp`".
-    - `dockerFolderPath` - The path to the folder that contains the Dockerfile - a critical parameter. You will need to point to the folder: `Application/aspnet-core-dotnet-core`.
-    - `tag` - This needs to be a unique value each time, as this is used to version the images in the repository. GitHub makes [environment variables](https://docs.github.com/en/free-pro-team@latest/actions/reference/context-and-expression-syntax-for-github-actions#github-context) available that helps with this. Set `tag` to `${{github.run_number}}`.
-
-9. Go to the Azure Portal and get the (1) username and (2) password and (3) login server to your ACR instance and save as GitHub secrets (ACR_USERNAME, ACR_PASSWORD, ACR_LOGIN_SERVER) ([hint](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-authentication#admin-account))
-
-10. Add a second **job** to your existing .NET Core workflow. [(hint)](https://docs.github.com/en/free-pro-team@latest/actions/learn-github-actions/introduction-to-github-actions)
-
-11. Make sure the first step in your second job includes `- uses: actions/checkout@v2`
-
-12. To authenticate to the registry, add the "Azure Container Registry Login" action as the next step and set the username, password and login server to the secrets you just created.
-
-13. To build your image, add a step named `Docker build` with the following as the `run` command: `docker build -t $registryName/$repositoryName:$tag --build-arg build_version=$tag $dockerFolderPath`
-
-14. To push your image to ACR, add a step named `Docker push` with the following as the `run` command: `docker push $registryName/$repositoryName:$tag`
-
-15. Save and commit your changes to the repo.
-
-16. Test the workflow by making a small change to the application code (i.e., add a comment). Commit, push, monitor the workflow and verify that a new container image is built, uniquely tagged and pushed to ACR after each successful workflow run.
+At this point, any changes pushed to the `/Application` folder automatically triggers the workflow...and that is Continuous Integration! 
 
 ### Success Criteria
 
 - Any changes pushed to the `/Application` folder automatically triggers the workflow 
 - .NET Core restore, build and test steps completes successfully
-- A new container image is built, uniquely tagged and pushed to ACR after each successful workflow run
 
 ### Learning Resources
 

@@ -28,17 +28,19 @@ This hack will help you learn:
     - Mention and link to the upcoming ability to manually kick off a workflow
  - [Challenge 4](./Student/challenge04.md) - Continuous Integration
     - Create a workflow to build and test and package
- - [Challenge 5](./Student/challenge05.md) - Continuous Delivery
+ - [Challenge 5](./Student/challenge04.md) - Build and push Docker image to container registry
+   - build and push a docker image to ACR
+ - [Challenge 6](./Student/challenge05.md) - Continuous Delivery
    - Add steps to deploy to the Azure app service
    - NO RELEASE GATES to do phase deployments to test and prod
- - [Challenge 6](./Student/challenge06.md) - Branching & Policies
+ - [Challenge 7](./Student/challenge06.md) - Branching & Policies
     - Talk about Branch protection rules https://docs.github.com/en/github/administering-a-repository/about-protected-branches
     - Implement feature branches to push a change 
     - Use pull request to merge to main
     - Choice: use feature branch + master or dev branch (to support phased deployment) 
- - [Challenge 7](./Student/challenge07.md) - Monitoring: Application Insights
+ - [Challenge 8](./Student/challenge07.md) - Monitoring: Application Insights
     - Create and add app insights to project (copy shawn's steps)
- - [Challenge 8](./Student/challenge08.md) - Security
+ - [Challenge 9](./Student/challenge08.md) - Security
     - Enable security advisories, dependabot alerts
     - Look at code scanning actions in the marketplace (SonarCloud Scan)
     - Reference anything GH has on the roadmap

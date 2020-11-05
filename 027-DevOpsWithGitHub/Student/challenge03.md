@@ -24,8 +24,8 @@ First, we are going to deploy the dev environment:
 
 2. Update the ARM template, replacing the `<prefix>` part with a unique lowercase 5 letter name. The resulting name needs to be globally unique to correctly provision resources.
 
-3. Create a GitHub workflow (`deployDev.yml`) that accomplishes the following ([hint](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-github-actions)):
-    - Only runs when changes are made to the workflow file itself ([hint](https://docs.github.com/en/free-pro-team@latest/actions/reference/workflow-syntax-for-github-actions#onpushpull_requestpaths))
+3. Create a GitHub workflow (`deployDev.yml`) that accomplishes the following:
+    - Only runs when changes are made to the workflow file itself 
     - Uses a service principal to authenticate to Azure
     - Uses the "Deploy Azure Resource Manager (ARM) Template" action to call your ARM template in your repo
 
@@ -56,6 +56,8 @@ You should see all three environments in Azure.
 - [Introduction to GitHub Actions](https://docs.github.com/en/free-pro-team@latest/actions/learn-github-actions/introduction-to-github-actions)
 - [Understanding workflow path filters](https://docs.github.com/en/free-pro-team@latest/actions/reference/workflow-syntax-for-github-actions#onpushpull_requestpaths)
 - [Migrating from Azure Pipelines to GitHub Actions](https://docs.github.com/en/free-pro-team@latest/actions/reference/workflow-syntax-for-github-actions#onpushpull_requestpaths)
+- [Deploy Azure Resource Manager templates by using GitHub Actions](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-github-actions)
+
 
 ### Advanced Challenges (optional)
 
