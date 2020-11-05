@@ -55,6 +55,6 @@ Review the following introduction to GitHub project boards: [GitHub project boar
 ### Advanced Challenges (optional)
 
 1. You can integrate Azure Boards with GitHub if you need advanced project management features. 
-    -  Follow the steps [here](https://docs.microsoft.com/en-us/azure/devops/boards/github/?view=azure-devops) to integrate Azure Boards with your GitHub repo.
+    -  Follow the steps [here](https://docs.microsoft.com/en-us/azure/devops/boards/github/install-github-app?view=azure-devops) to integrate Azure Boards with your GitHub repo.
 
 [< Previous](challenge00.md) - [Home](../readme.md) - [Next >](challenge02.md)
