@@ -5,7 +5,7 @@ DevOps is a journey not a destination. Our goal when writing this challenged bas
 
 ## Learning Objectives
 
-This hack will help you learn:
+This DevOps with GitHub hack will help you learn:
 
 1. How to use GitHub to manage source control
 1. How to use GitHub for Project Management
@@ -14,39 +14,19 @@ This hack will help you learn:
 
 ## Challenges
  - [Challenge 0](./Student/challenge00.md) - Setup and Introduction
-    - Install GitHub desktop  
  - [Challenge 1](./Student/challenge01.md) - Track your work with GitHub Project Boards
-    - Create the project
-    - Add issues for each challenge
-    - Optional challenge: integrate Azure Boards 
  - [Challenge 2](./Student/challenge02.md) - Centralize your code with GitHub Repos
-    - Add code to repo
-    - Clone to local machine
-    - Make a change and push to GitHub
  - [Challenge 3](./Student/challenge03.md) - Infrastructure as Code
-    - Create the Azure app service via GH action or manually in the portal
-    - Mention and link to the upcoming ability to manually kick off a workflow
  - [Challenge 4](./Student/challenge04.md) - Continuous Integration
-    - Create a workflow to build and test and package
  - [Challenge 5](./Student/challenge04.md) - Build and push Docker image to container registry
-   - build and push a docker image to ACR
  - [Challenge 6](./Student/challenge05.md) - Continuous Delivery
-   - Add steps to deploy to the Azure app service
-   - NO RELEASE GATES to do phase deployments to test and prod
  - [Challenge 7](./Student/challenge06.md) - Branching & Policies
-    - Talk about Branch protection rules https://docs.github.com/en/github/administering-a-repository/about-protected-branches
-    - Implement feature branches to push a change 
-    - Use pull request to merge to main
-    - Choice: use feature branch + master or dev branch (to support phased deployment) 
  - [Challenge 8](./Student/challenge07.md) - Monitoring: Application Insights
-    - Create and add app insights to project (copy shawn's steps)
  - [Challenge 9](./Student/challenge08.md) - Security
-    - Enable security advisories, dependabot alerts
-    - Look at code scanning actions in the marketplace (SonarCloud Scan)
-    - Reference anything GH has on the roadmap
+
 
 ## Prerequisites
-- Your own Azure subscription with Owner access
+- Your own Azure subscription with **owner** access. See considerations below for additional guidance.
 - [Visual Studio Code](https://code.visualstudio.com)
 - [Git SCM](https://git-scm.com/download)
 
@@ -55,6 +35,17 @@ This hack will help you learn:
   - Student Challenge Guides
 - `../Student/Resources`
   - Student's resource files, code, and templates to aid with challenges
+
+## Considerations
+
+If you are running this hack with a group, here are some options for providing access to Azure:
+- Each person/team uses their own subscription (ideal)
+- Use a single subscription with each person/team using a different resource group
+- Use a single subscription and resource group, with each person/team creating resources within the single resource group (less ideal)
+
+Regardless of the option you choose, you'll have to consider:
+- [Azure default quotas and resource limits](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits) (for example, # of VMs allowed per region or subscription)
+- Unique naming of resources - many services may require a globally unique name, for example, App service, container registry.
 
 ## Contributors
 - Kevin M. Gates

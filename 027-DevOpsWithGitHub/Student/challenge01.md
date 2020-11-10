@@ -33,7 +33,7 @@ Review the following introduction to GitHub project boards: [GitHub project boar
 
 6. Since you are currently working on Challenge 1, drag the `Challenge 1` card from the "To do" column to "In progress."
 
-7. Ask your team member to close the `challenge 1` issue you assigned to them. Review your project board to see if the issue moved to the 'Done' column automatically. 
+7. Ask your team member to close the `Challenge 1` issue you assigned to them. Review your project board to see if the issue moved to the 'Done' column automatically. 
 
 8. After you complete each of the following challenges, be sure to close each associated issue. 
 
@@ -56,5 +56,6 @@ Review the following introduction to GitHub project boards: [GitHub project boar
 
 1. You can integrate Azure Boards with GitHub if you need advanced project management features. 
     -  Follow the steps [here](https://docs.microsoft.com/en-us/azure/devops/boards/github/install-github-app?view=azure-devops) to integrate Azure Boards with your GitHub repo.
+2. Use the [GitHub CLI](https://cli.github.com/manual/index) to create issue #9. Once, you have created the issue, use the CLI to close the issue.
 
 [< Previous](challenge00.md) - [Home](../readme.md) - [Next >](challenge02.md)

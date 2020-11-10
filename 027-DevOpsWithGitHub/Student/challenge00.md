@@ -10,20 +10,18 @@ DevOps is a broad concept that encompasses people, processes, and tools. The too
 
 ### Description
 
-1. Begin by creating a GitHub account that you can use for this hack. You may use an existing account if you have one already.
+1. Begin by creating a GitHub account and repository that you can use for this hack. You may use an existing account if you have one already.
 
-2. Create a new repository and intialize it with a readme.md file.
+2. Next, create an Azure subscription that you can use for this hack. If you already have a subscription, you may use it. Alternatively, you can get a free trial subscription [here](https://azure.microsoft.com/en-us/free/).
 
-3. Next, create an Azure subscription that you can use for this hack. If you already have a subscription, you may use it. Alternatively, you can get a free trial subscription [here](https://azure.microsoft.com/en-us/free/).
+3. Log in to the [Azure Portal](http://portal.azure.com) to confirm that you have an active subscription that you can deploy resources to. 
 
-4. Log in to the [Azure Portal](http://portal.azure.com) to confirm that you have an active subscription that you can deploy resources to. 
-
-5. Additionally, you will need to install a Git client. Two of the most popular ways of working with GitHub are the Git command line tool and GitHub Desktop (you only need one):
+4. Additionally, you will need to install a Git client. Two of the most popular ways of working with GitHub are the Git command line tool and GitHub Desktop (you only need one):
 
     - If you are comfortable with command line interfaces and want to try Git SCM, follow instructions to download and install [here](https://git-scm.com/downloads). 
     - If you prefer a GUI-based experience, download and install GitHub Desktop [here](https://desktop.github.com/). 
 
-6. Finally, you will need some version of IDE or text editor to complete the challenges. You are welcome to use built in applications such as TextEdit or Notepad, though we highly recommend development tools such as [Visual Studio Code](https://code.visualstudio.com/) or [Atom](https://atom.io/). Follow the links to download and install, or use an editor of your choice!
+5. Finally, you will need some version of IDE or text editor to complete the challenges. You are welcome to use built in applications such as TextEdit or Notepad, though we highly recommend development tools such as [Visual Studio Code](https://code.visualstudio.com/) or [Atom](https://atom.io/). Follow the links to download and install, or use an editor of your choice!
 
 
 ### Success Criteria

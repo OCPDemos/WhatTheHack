@@ -21,8 +21,8 @@ Extend the workflow you created in Challenge #4 to:
 1. Configure your `dev` environment to pull the latest container image from ACR. 
    - Login to Azure using your service principal, if needed ([hint](https://docs.microsoft.com/en-us/azure/app-service/deploy-container-github-action?tabs=service-principal#tabpanel_CeZOj-G++Q-3_service-principal))
    - Use the `Azure/webapps-deploy@v2` [action](https://github.com/Azure/webapps-deploy) to update the Web App to pull the latest image from ACR. Key parameters to configure:
-      - `app-name` (i.e., `<prefix>devops-dev`)
-      - `images` (i.e., `<prefix>devopsreg`.azurecr.io/`<prefix>devopsimage`:`$`{{github.run_number}})
+      - `app-name` - the name of the wep app instance to target
+      - `images` - the path to the image you pushed to ACR
 
 2. Make a small change to your application  (i.e.,`/Application/aspnet-core-dotnet-core/Views/Home/Index.cshtml`), commit, push, monitor the workflow and see if the change shows up on the dev instance of the website.
 
